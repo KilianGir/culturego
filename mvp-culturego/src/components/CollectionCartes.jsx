@@ -9,18 +9,18 @@ const configParRarete = {
   },
   rare: {
     icon: '🔵',
-    backgroundColor: '#b3d4fc',
+    backgroundColor: '#69abfcff',
     color: '#003366'
   },
   epique: {
     icon: '🟣',
-    backgroundColor: '#d9b3ff',
+    backgroundColor: '#b46efaff',
     color: '#4b006e'
   },
   legendaire: {
     icon: '⭐',
-    backgroundColor: '#ffe082',
-    color: '#7a5700'
+    backgroundColor: '#fad155ff',
+    color: '#533c01ff'
   }
 };
 
@@ -94,7 +94,7 @@ export default function CollectionCartes({ cartes }) {
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-              gap: '12px'
+              gap: '12px 40px'
             }}>
               {cartesTriees.map(({ carte, count }, index) => {
                 const config = configParRarete[carte.rarete] || {};
@@ -104,23 +104,24 @@ export default function CollectionCartes({ cartes }) {
                   <div key={index} style={{
                     backgroundColor: config.backgroundColor,
                     color: config.color,
-                    padding: '10px',
-                    borderRadius: '8px'
+                    padding: '15px',
+                    borderRadius: '15px',
+                    maxWidth: '240px',
+                    width: '100%',
+                    margin: '0 auto 10px'
                   }}>
+                    <div style={{ fontSize: '20px', paddingTop: '2px', paddingBottom: '20px'  }}>
+                      {config.icon} <strong>{carte.nom}</strong> <span style={{ fontSize: '16px', ontStyle: 'italic' }}>{count > 1 && `×${count}`}</span>
+                    </div>
                     {imageUrl && (
                       <img
                         src={imageUrl}
                         alt={`${carte.nom} (${carte.rarete})`}
-                        style={{ width: '100%', borderRadius: '4px', marginBottom: '6px' }}
+                        style={{ width: '100%', borderRadius: '5px', marginBottom: '20px', display: 'block', margin: '0 auto 15px' }}
                       />
                     )}
-                    <div style={{ fontSize: '20px' }}>
-                      {config.icon} <strong>{carte.nom}</strong>
-                    </div>
-                    <div style={{ fontStyle: 'italic' }}>
-                      ({carte.rarete}) {count > 1 && `×${count}`}
-                    </div>
-                    <div>{carte.description}</div>
+                    
+                    <div style={{ paddingTop: '2px', paddingBottom: '15px'  }}>{carte.description}</div>
                   </div>
                 );
               })}
