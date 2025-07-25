@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import { lieuxCulturels } from './data/lieux';
 import CollectionCartes from './components/CollectionCartes';
 
@@ -26,7 +26,7 @@ function tirerCarteAleatoire(cartes) {
 
 export default function App() {
   const [cartes, setCartes] = useState([]);
-  const [message, setMessage] = useState(""); // ✅ Nouveau
+  const [message, setMessage] = useState("");
 
   const handleVisite = (lieu) => {
     const carte = tirerCarteAleatoire(lieu.cartes);
