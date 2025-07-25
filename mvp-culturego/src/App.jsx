@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { lieuxCulturels } from './data/lieux';
 import CollectionCartes from './components/CollectionCartes';
 
-const profils = ['Kili', 'Jude', 'Arduino', 'Invité'];
+const profils = ['Kilian', 'Jude', 'Arduino', 'Invité'];
 
 function tirerCarteAleatoire(cartes) {
   const probabilités = {
