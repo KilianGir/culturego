@@ -6,15 +6,15 @@ const profils = ['Kilian', 'Jude', 'Arduino', 'Invité'];
 
 function tirerCarteAleatoire(cartes) {
   const probabilités = {
-    légendaire: 0.10,
-    épique: 0.20,
+    legendaire: 0.10,
+    epique: 0.20,
     rare: 0.30,
     commun: 0.40
   };
 
   const tirage = Math.random();
   let seuil = 0;
-  for (const rarete of ['légendaire', 'épique', 'rare', 'commun']) {
+  for (const rarete of ['legendaire', 'epique', 'rare', 'commun']) {
     seuil += probabilités[rarete];
     if (tirage <= seuil) {
       const candidates = cartes.filter(c => c.rarete === rarete);
@@ -54,10 +54,10 @@ export default function App() {
             : c
         );
       }
-      return [...prev, { lieuNom: lieu.nom, carte, count: 1 }];
+      return [...prev, { lieuNom: lieu.nom, lieuID: lieu.id, carte, count: 1 }];
     });
 
-    setMessage(`Tu as débloqué ${carte.nom} (${carte.rarete}) au ${lieu.nom} !`);
+    setMessage(`Tu as débloqué ${carte.nom} (${carte.rarete}) au ${lieu.nom}  !`);
   };
 
   const resetCollection = () => {

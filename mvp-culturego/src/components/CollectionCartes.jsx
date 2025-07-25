@@ -9,18 +9,27 @@ const configParRarete = {
   },
   rare: {
     icon: '🔵',
-    backgroundColor: '#b3d4fc',
+    backgroundColor: '#69abfcff',
     color: '#003366'
   },
-  épique: {
+  epique: {
     icon: '🟣',
-    backgroundColor: '#d9b3ff',
+    backgroundColor: '#b46efaff',
     color: '#4b006e'
   },
-  légendaire: {
+  legendaire: {
     icon: '⭐',
-    backgroundColor: '#ffe082',
-    color: '#7a5700'
+    backgroundColor: '#fad155ff',
+    color: '#533c01ff'
+  }
+};
+
+// 🔧 Fonction pour obtenir le chemin d'image
+const getImageUrl = (lieuId, rarete) => {
+  try {
+    return new URL(`../assets/${lieuId}/${rarete}.jpg`, import.meta.url).href;
+  } catch {
+    return ''; // fallback si image non trouvée
   }
 };
 
@@ -70,10 +79,11 @@ export default function CollectionCartes({ cartes }) {
       {lieuxVisites.map(lieuNom => {
         const cartesLieu = cartesParLieu[lieuNom];
         const lieuData = lieuxCulturels.find(l => l.nom === lieuNom);
+        const lieuId = lieuData?.id || 'inconnu';
         const nbTotal = lieuData?.cartes?.length || 0;
 
         const cartesTriees = [...cartesLieu].sort((a, b) => {
-          const ordre = ['légendaire', 'épique', 'rare', 'commun'];
+          const ordre = ['legendaire', 'epique', 'rare', 'commun'];
           const diff = ordre.indexOf(a.carte.rarete) - ordre.indexOf(b.carte.rarete);
           return diff !== 0 ? diff : a.carte.nom.localeCompare(b.carte.nom);
         });
@@ -84,24 +94,34 @@ export default function CollectionCartes({ cartes }) {
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-              gap: '12px'
+              gap: '12px 40px'
             }}>
               {cartesTriees.map(({ carte, count }, index) => {
                 const config = configParRarete[carte.rarete] || {};
+                const imageUrl = getImageUrl(lieuId, carte.rarete);
+
                 return (
                   <div key={index} style={{
                     backgroundColor: config.backgroundColor,
                     color: config.color,
-                    padding: '10px',
-                    borderRadius: '8px'
+                    padding: '15px',
+                    borderRadius: '15px',
+                    maxWidth: '240px',
+                    width: '100%',
+                    margin: '0 auto 10px'
                   }}>
-                    <div style={{ fontSize: '24px' }}>{config.icon} <strong>{carte.nom}</strong></div>
-                    <div style={{ fontStyle: 'italic' }}>
-                      ({carte.rarete}) {count > 1 && `×${count}`}
+                    <div style={{ fontSize: '20px', paddingTop: '2px', paddingBottom: '20px'  }}>
+                      {config.icon} <strong>{carte.nom}</strong> <span style={{ fontSize: '16px', ontStyle: 'italic' }}>{count > 1 && `×${count}`}</span>
                     </div>
-                    <div>
-                      {carte.description}
-                    </div>
+                    {imageUrl && (
+                      <img
+                        src={imageUrl}
+                        alt={`${carte.nom} (${carte.rarete})`}
+                        style={{ width: '100%', borderRadius: '5px', marginBottom: '20px', display: 'block', margin: '0 auto 15px' }}
+                      />
+                    )}
+                    
+                    <div style={{ paddingTop: '2px', paddingBottom: '15px'  }}>{carte.description}</div>
                   </div>
                 );
               })}
