@@ -12,12 +12,12 @@ const configParRarete = {
     backgroundColor: '#b3d4fc',
     color: '#003366'
   },
-  épique: {
+  epique: {
     icon: '🟣',
     backgroundColor: '#d9b3ff',
     color: '#4b006e'
   },
-  légendaire: {
+  legendaire: {
     icon: '⭐',
     backgroundColor: '#ffe082',
     color: '#7a5700'
@@ -73,7 +73,7 @@ export default function CollectionCartes({ cartes }) {
         const nbTotal = lieuData?.cartes?.length || 0;
 
         const cartesTriees = [...cartesLieu].sort((a, b) => {
-          const ordre = ['légendaire', 'épique', 'rare', 'commun'];
+          const ordre = ['legendaire', 'epique', 'rare', 'commun'];
           const diff = ordre.indexOf(a.carte.rarete) - ordre.indexOf(b.carte.rarete);
           return diff !== 0 ? diff : a.carte.nom.localeCompare(b.carte.nom);
         });
