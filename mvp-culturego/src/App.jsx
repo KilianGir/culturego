@@ -25,11 +25,10 @@ function tirerCarteAleatoire(cartes) {
 }
 
 export default function App() {
-  const [lieuActuel, setLieuActuel] = useState(null);
   const [cartes, setCartes] = useState([]);
+  const [message, setMessage] = useState("");
 
   const handleVisite = (lieu) => {
-    setLieuActuel(lieu);
     const carte = tirerCarteAleatoire(lieu.cartes);
 
     setCartes(prev => {
@@ -43,11 +42,13 @@ export default function App() {
       }
       return [...prev, { lieuNom: lieu.nom, carte, count: 1 }];
     });
+
+    setMessage(`Tu as débloqué ${carte.nom} (${carte.rarete}) au ${lieu.nom} !`);
   };
 
   const resetCollection = () => {
     setCartes([]);
-    setLieuActuel(null);
+    setMessage("");
   };
 
   return (
@@ -70,10 +71,8 @@ export default function App() {
         </button>
       </div>
 
-      {lieuActuel && (
-        <p>
-          Tu as visité <strong>{lieuActuel.nom}</strong> et reçu une carte !
-        </p>
+      {message && (
+        <p style={{ marginTop: '16px', fontWeight: 'bold', color: '#2c3e50' }}>{message}</p>
       )}
 
       <hr />
