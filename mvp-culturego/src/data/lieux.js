@@ -5,7 +5,7 @@ const lieux = [
     description: 'Musée dédié au lac Léman et à son écosystème.',
     cartes: [
       { id: 'lac_leman', nom: 'Lac Léman', rarete: 'commun', description: 'Étendue majestueuse aux eaux profondes.' },
-      { id: 'poisson_dore', nom: 'Poisson Doré', rarete: 'rare', description: 'Espèce rare, brillante comme l’or.' },
+      { id: 'poisson_dore', nom: 'Poisson Doré', rarete: 'rare', description: 'Espèce rare, brillante comme l\'or.' },
       { id: 'tresor_englouti', nom: 'Trésor Englouti', rarete: 'épique', description: 'Mystérieux vestiges cachés sous les flots.' },
       { id: 'esprit_leman', nom: 'Esprit du Léman', rarete: 'légendaire', description: 'Gardien ancestral des eaux du lac.' }
     ]
@@ -26,8 +26,8 @@ const lieux = [
     nom: 'Église Saint-Vincent',
     description: 'Église gothique au cœur de Nyon.',
     cartes: [
-      { id: 'cloche_antique', nom: 'Cloche Antique', rarete: 'commun', description: 'Résonne encore des prières d’autrefois.' },
-      { id: 'vitrail_colore', nom: 'Vitrail Coloré', rarete: 'rare', description: 'Illumine l’intérieur de mille éclats.' },
+      { id: 'cloche_antique', nom: 'Cloche Antique', rarete: 'commun', description: 'Résonne encore des prières d\'autrefois.' },
+      { id: 'vitrail_colore', nom: 'Vitrail Coloré', rarete: 'rare', description: 'Illumine l\'intérieur de mille éclats.' },
       { id: 'choeur_chantant', nom: 'Chœur Chantant', rarete: 'épique', description: 'Écho céleste des voix sacrées.' },
       { id: 'saint_protecteur', nom: 'Saint Protecteur', rarete: 'légendaire', description: 'Gardien spirituel de la ville.' }
     ]
@@ -46,12 +46,12 @@ const lieux = [
   {
     id: 'musee_roulet',
     nom: 'Musée Roulet',
-    description: 'Musée d’histoire locale et d’art.',
+    description: 'Musée d\'histoire locale et d\'art.',
     cartes: [
-      { id: 'tableau_classique', nom: 'Tableau Classique', rarete: 'commun', description: 'Peinture intemporelle d’un autre âge.' },
+      { id: 'tableau_classique', nom: 'Tableau Classique', rarete: 'commun', description: 'Peinture intemporelle d\'un autre âge.' },
       { id: 'sculpture_moderne', nom: 'Sculpture Moderne', rarete: 'rare', description: 'Forme audacieuse et contemporaine.' },
       { id: 'artiste_celebre', nom: 'Artiste Célèbre', rarete: 'épique', description: 'Génie créatif reconnu dans tout le canton.' },
-      { id: 'chef_oeuvre', nom: 'Chef-d\'œuvre Unique', rarete: 'légendaire', description: 'Œuvre d’art sans égale, précieuse et rare.' }
+      { id: 'chef_oeuvre', nom: 'Chef-d\'œuvre Unique', rarete: 'légendaire', description: 'Œuvre d\'art sans égale, précieuse et rare.' }
     ]
   },
   {
@@ -71,7 +71,7 @@ const lieux = [
     description: 'Ancien moulin rénové en espace culturel.',
     cartes: [
       { id: 'meule_ancienne', nom: 'Meule Ancienne', rarete: 'commun', description: 'Usée par le grain et les années.' },
-      { id: 'toile_moulin', nom: 'Toile du Moulin', rarete: 'rare', description: 'Capturant l’âme du lieu sur la toile.' },
+      { id: 'toile_moulin', nom: 'Toile du Moulin', rarete: 'rare', description: 'Capturant l\'âme du lieu sur la toile.' },
       { id: 'maitre_meunier', nom: 'Maître Meunier', rarete: 'épique', description: 'Habile et respecté dans son art.' },
       { id: 'ame_moulin', nom: 'Âme du Moulin', rarete: 'légendaire', description: 'Force invisible qui anime les pierres.' }
     ]
@@ -95,7 +95,7 @@ const lieux = [
       { id: 'pave_ancien', nom: 'Pavé Ancien', rarete: 'commun', description: 'Foulé par des siècles de passants.' },
       { id: 'marchand_ambulant', nom: 'Marchand Ambulant', rarete: 'rare', description: 'Il apporte vie et couleur à la place.' },
       { id: 'fete_populaire', nom: 'Fête Populaire', rarete: 'épique', description: 'Moments festifs gravés dans les mémoires.' },
-      { id: 'ame_place', nom: 'Âme de la Place', rarete: 'légendaire', description: 'Incarnation de l’esprit collectif du lieu.' }
+      { id: 'ame_place', nom: 'Âme de la Place', rarete: 'légendaire', description: 'Incarnation de l\'esprit collectif du lieu.' }
     ]
   },
   {
@@ -105,8 +105,8 @@ const lieux = [
     cartes: [
       { id: 'livre_relier', nom: 'Livre Relié', rarete: 'commun', description: 'Pages jaunies pleines de savoir.' },
       { id: 'manuscrit_rare', nom: 'Manuscrit rare', rarete: 'rare', description: 'Texte ancien aux secrets oubliés.' },
-      { id: 'ecrivain_celebre', nom: 'Écrivain Célèbre', rarete: 'épique', description: 'Auteur dont l’œuvre traverse le temps.' },
-      { id: 'savoir_ancien', nom: 'Savoir Ancien', rarete: 'légendaire', description: 'Connaissances profondes venues d’un autre âge.' }
+      { id: 'ecrivain_celebre', nom: 'Écrivain Célèbre', rarete: 'épique', description: 'Auteur dont l\'œuvre traverse le temps.' },
+      { id: 'savoir_ancien', nom: 'Savoir Ancien', rarete: 'légendaire', description: 'Connaissances profondes venues d\'un autre âge.' }
     ]
   }
 ];
