@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { lieuxCulturels } from './data/lieux';
 import CollectionCartes from './components/CollectionCartes';
+
+const profils = ['Kili', 'Jude', 'Arduino', 'Invité'];
 
 function tirerCarteAleatoire(cartes) {
   const probabilités = {
@@ -25,8 +27,20 @@ function tirerCarteAleatoire(cartes) {
 }
 
 export default function App() {
+  const [profil, setProfil] = useState(profils[0]);
   const [cartes, setCartes] = useState([]);
   const [message, setMessage] = useState("");
+
+  // Charger la collection du profil depuis localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem(`collection_${profil}`);
+    setCartes(saved ? JSON.parse(saved) : []);
+  }, [profil]);
+
+  // Sauvegarder la collection à chaque mise à jour
+  useEffect(() => {
+    localStorage.setItem(`collection_${profil}`, JSON.stringify(cartes));
+  }, [cartes, profil]);
 
   const handleVisite = (lieu) => {
     const carte = tirerCarteAleatoire(lieu.cartes);
@@ -49,11 +63,21 @@ export default function App() {
   const resetCollection = () => {
     setCartes([]);
     setMessage("");
+    localStorage.removeItem(`collection_${profil}`);
   };
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>CultureGo - MVP</h1>
+      <h1>CultureGo - MVP Multi-Profiles</h1>
+
+      <label>
+        Choisir un profil :{' '}
+        <select value={profil} onChange={e => setProfil(e.target.value)}>
+          {profils.map(p => (
+            <option key={p} value={p}>{p}</option>
+          ))}
+        </select>
+      </label>
 
       <div>
         <h2>Choisis un lieu à visiter :</h2>
