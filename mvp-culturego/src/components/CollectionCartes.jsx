@@ -5,7 +5,7 @@ const configParRarete = {
   commun: {
     icon: '⚪️',
     backgroundColor: '#e0e0e0',
-    color: '#333'
+    color: '#003333'
   },
   rare: {
     icon: '🔵',
@@ -95,10 +95,12 @@ export default function CollectionCartes({ cartes }) {
                     padding: '10px',
                     borderRadius: '8px'
                   }}>
-                    <div style={{ fontSize: '24px' }}>{config.icon}</div>
-                    <strong>{carte.nom}</strong>
+                    <div style={{ fontSize: '24px' }}>{config.icon} <strong>{carte.nom}</strong></div>
                     <div style={{ fontStyle: 'italic' }}>
                       ({carte.rarete}) {count > 1 && `×${count}`}
+                    </div>
+                    <div>
+                      {carte.description}
                     </div>
                   </div>
                 );
