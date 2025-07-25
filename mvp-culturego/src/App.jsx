@@ -54,10 +54,10 @@ export default function App() {
             : c
         );
       }
-      return [...prev, { lieuNom: lieu.nom, carte, count: 1 }];
+      return [...prev, { lieuNom: lieu.nom, lieuID: lieu.id, carte, count: 1 }];
     });
 
-    setMessage(`Tu as débloqué ${carte.nom} (${carte.rarete}) au ${lieu.nom} !`);
+    setMessage(`Tu as débloqué ${carte.nom} (${carte.rarete}) au ${lieu.nom}  !`);
   };
 
   const resetCollection = () => {

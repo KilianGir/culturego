@@ -24,6 +24,15 @@ const configParRarete = {
   }
 };
 
+// 🔧 Fonction pour obtenir le chemin d'image
+const getImageUrl = (lieuId, rarete) => {
+  try {
+    return new URL(`../assets/${lieuId}/${rarete}.jpg`, import.meta.url).href;
+  } catch {
+    return ''; // fallback si image non trouvée
+  }
+};
+
 export default function CollectionCartes({ cartes }) {
   const cartesParLieu = cartes.reduce((acc, carte) => {
     if (!acc[carte.lieuNom]) {
@@ -70,6 +79,7 @@ export default function CollectionCartes({ cartes }) {
       {lieuxVisites.map(lieuNom => {
         const cartesLieu = cartesParLieu[lieuNom];
         const lieuData = lieuxCulturels.find(l => l.nom === lieuNom);
+        const lieuId = lieuData?.id || 'inconnu';
         const nbTotal = lieuData?.cartes?.length || 0;
 
         const cartesTriees = [...cartesLieu].sort((a, b) => {
@@ -88,6 +98,8 @@ export default function CollectionCartes({ cartes }) {
             }}>
               {cartesTriees.map(({ carte, count }, index) => {
                 const config = configParRarete[carte.rarete] || {};
+                const imageUrl = getImageUrl(lieuId, carte.rarete);
+
                 return (
                   <div key={index} style={{
                     backgroundColor: config.backgroundColor,
@@ -95,13 +107,20 @@ export default function CollectionCartes({ cartes }) {
                     padding: '10px',
                     borderRadius: '8px'
                   }}>
-                    <div style={{ fontSize: '24px' }}>{config.icon} <strong>{carte.nom}</strong></div>
+                    {imageUrl && (
+                      <img
+                        src={imageUrl}
+                        alt={`${carte.nom} (${carte.rarete})`}
+                        style={{ width: '100%', borderRadius: '4px', marginBottom: '6px' }}
+                      />
+                    )}
+                    <div style={{ fontSize: '20px' }}>
+                      {config.icon} <strong>{carte.nom}</strong>
+                    </div>
                     <div style={{ fontStyle: 'italic' }}>
                       ({carte.rarete}) {count > 1 && `×${count}`}
                     </div>
-                    <div>
-                      {carte.description}
-                    </div>
+                    <div>{carte.description}</div>
                   </div>
                 );
               })}
