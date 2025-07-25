@@ -67,7 +67,7 @@ export default function App() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{  paddingLeft: '20px', paddingRight: '20px' }}>
       <h1>CultureGo - MVP Multi-Profiles</h1>
 
       <label>

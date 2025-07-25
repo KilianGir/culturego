@@ -54,7 +54,7 @@ export default function CollectionCartes({ cartes }) {
   );
 
   return (
-    <div>
+    <div style={{  paddingLeft: '0px', paddingRight: '20px' }}>
       <h2>Ma collection</h2>
       <p><strong>Lieux visités :</strong> {lieuxVisites.length} / {totalLieux}</p>
       <p><strong>Cartes débloquées :</strong> {cartesDebloqueesUniques} / {totalCartesPossibles} ({pourcentageCompletion}%)</p>
