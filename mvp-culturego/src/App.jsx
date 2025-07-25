@@ -68,7 +68,13 @@ export default function App() {
 
   return (
     <div style={{  paddingLeft: '20px', paddingRight: '20px' }}>
-      <h1>CultureGo - MVP Multi-Profiles</h1>
+      <div><img
+        src={"/Logo.svg"}
+        style={{ maxWidth: '200px', marginBottom: '20px', margin: '0 auto 15px' }}
+      /></div>
+      
+      
+      <h1>CultureGo - MVP</h1>
 
       <label>
         Choisir un profil :{' '}
@@ -96,7 +102,7 @@ export default function App() {
       </div>
 
       {message && (
-        <p style={{ marginTop: '16px', fontWeight: 'bold', color: '#2c3e50' }}>{message}</p>
+        <p style={{ marginTop: '16px', fontWeight: 'bold', color: '#2c3e50'}}>{message}</p>
       )}
 
       <hr />
