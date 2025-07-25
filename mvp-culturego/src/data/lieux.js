@@ -21,6 +21,28 @@ const lieux = [
       { id: 'seigneur_chateau', nom: 'Seigneur du Château', rarete: 'legendaire', description: 'En noble maître des lieux, son autorité est incontestée.' }
     ]
   },
+   {
+    id: 'chateau_prangins',
+    nom: 'Château de Prangins',
+    description: 'Le château est le site romand des musées nationaux suisses.',
+    cartes: [
+      { id: 'jardin_potager', nom: 'Jardin Potager', rarete: 'commun', description: 'Carré de légumes anciens cultivés à la main.' },
+      { id: 'salon_dame', nom: 'Salon de la Dame', rarete: 'rare', description: 'Pièce élégante aux meubles raffinés du XVIIIe siècle.' },
+      { id: 'livre_interdit', nom: 'Livre Interdit', rarete: 'epique', description: 'Ouvrage rare aux pensées révolutionnaires.' },
+      { id: 'fantome_potager', nom: 'Fantôme du Potager', rarete: 'legendaire', description: 'Présence invisible qui veille sur les savoirs oubliés.' }
+    ]
+  },
+  {
+    id: 'musee_chiblins',
+    nom: 'Musée de Chiblins',
+    description: 'Le musée romand de la machine agricole, consacré aux outils et machines agricoles.',
+    cartes: [
+      { id: 'roue_fer', nom: 'Roue en Fer', rarete: 'commun', description: 'Vieille roue utilisée pour les champs boueux.' },
+      { id: 'tracteur_bleu', nom: 'Tracteur Bleu', rarete: 'rare', description: 'Icône mécanique des années 60.' },
+      { id: 'batteuse_legendaire', nom: 'Batteuse Légendaire', rarete: 'epique', description: 'Machine mythique à l\'efficacité redoutable.' },
+      { id: 'esprit_fermier', nom: 'Esprit du Fermier', rarete: 'legendaire', description: 'Âme laborieuse et invisible de la terre romande.' }
+    ]
+  },
   {
     id: 'temple_nyon',
     nom: 'Temple de Nyon',
