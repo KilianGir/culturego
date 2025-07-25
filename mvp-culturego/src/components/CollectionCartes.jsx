@@ -27,7 +27,7 @@ const configParRarete = {
 // 🔧 Fonction pour obtenir le chemin d'image
 const getImageUrl = (lieuId, rarete) => {
   try {
-    return new URL(`../assets/${lieuId}/${rarete}.jpg`, import.meta.url).href;
+    return new URL(`../assets/${lieuId}/${rarete}.png`, import.meta.url).href;
   } catch {
     return ''; // fallback si image non trouvée
   }

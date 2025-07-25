@@ -57,12 +57,12 @@ const lieux = [
   {
     id: 'amphitheatre_nyon',
     nom: 'Amphithéâtre de Nyon',
-    description: 'Parc historique avec vestiges gaulois.',
+    description: 'Parc historique avec vestiges romains.',
     cartes: [
       { id: 'pierre_ancienne', nom: 'Pierre Ancienne', rarete: 'commun', description: 'Témoin silencieux des siècles passés.' },
       { id: 'sculpture_romaine', nom: 'Sculpture Romaine', rarete: 'rare', description: 'Art ancestral gravé dans la pierre.' },
       { id: 'chef_romain', nom: 'Chef Romain', rarete: 'epique', description: 'Guerrier légendaire des peuples anciens.' },
-      { id: 'esprit_ancetre', nom: 'Esprit Ancêtre', rarete: 'legendaire', description: 'Mémoire vivante de la tribu disparue.' }
+      { id: 'esprit_ancetre', nom: 'Esprit Ancêtre', rarete: 'legendaire', description: 'Mémoire vivante de la tribu romaine qui a occupé ces terres.' }
     ]
   },
   {
