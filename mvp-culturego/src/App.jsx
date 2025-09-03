@@ -68,10 +68,7 @@ export default function App() {
 
   return (
     <div style={{  paddingLeft: '20px', paddingRight: '20px' }}>
-      <div><img
-        src={"/Logo.svg"}
-        style={{ maxWidth: '200px', marginBottom: '20px', margin: '0 auto 15px' }}
-      /></div>
+      <div><img src="/Logo.svg" alt="CultureGO Logo" className="logo" /></div>
       
       
       <h1>CultureGo - MVP</h1>

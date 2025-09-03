@@ -1,0 +1,17 @@
+/* src/index.css */
+
+/* Global font */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Logo style */
+.logo {
+  display: block;
+  margin: 20px auto; /* center horizontally */
+  max-width: 120px;  /* smaller size */
+  height: auto;
+}
