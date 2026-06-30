@@ -222,5 +222,229 @@
         "description": "Gardien sylvestre dont la course silencieuse réveille les sentiers à l'aube."
       }
     ]
+  },
+  {
+    "id": "queue_arve",
+    "nom": "Centre sportif de la Queue d'Arve",
+    "description": "Vaste complexe multisport des Acacias, dominé par son grand mur de grimpe.",
+    "coordonnees": [
+      46.19075,
+      6.13185
+    ],
+    "emoji": "🧗",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "grimpeur_debutant",
+        "nom": "Grimpeur Débutant",
+        "rarete": "commun",
+        "description": "Baudrier neuf et mains moites, il s'attaque à sa première voie sous les encouragements de la salle."
+      },
+      {
+        "id": "ouvreuse_voies",
+        "nom": "Ouvreuse de Voies",
+        "rarete": "rare",
+        "description": "Clé à la main, elle imagine des tracés retors que personne ne réussit du premier coup."
+      },
+      {
+        "id": "gardien_paroi",
+        "nom": "Gardien de la Paroi",
+        "rarete": "legendaire",
+        "description": "Esprit de la roche dont les prises semblent pousser sous les doigts des plus audacieux."
+      }
+    ]
+  },
+  {
+    "id": "parc_bastions",
+    "nom": "Échiquiers du Parc des Bastions",
+    "description": "Sous les marronniers, on s'affronte sur les échiquiers géants du parc.",
+    "coordonnees": [
+      46.20055,
+      6.1452
+    ],
+    "emoji": "♟️",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "joueur_bastions",
+        "nom": "Joueur du Dimanche",
+        "rarete": "commun",
+        "description": "Pièce géante à bout de bras, il médite son coup en bloquant toute l'allée du parc."
+      },
+      {
+        "id": "maitre_echecs",
+        "nom": "Maître d'Échecs",
+        "rarete": "rare",
+        "description": "Imperturbable, il enchaîne les parties à l'aveugle contre cinq adversaires à la fois."
+      },
+      {
+        "id": "roi_bastions",
+        "nom": "Roi des Bastions",
+        "rarete": "legendaire",
+        "description": "Souverain de pierre descendu de l'échiquier, il règne sur chaque case du parc."
+      }
+    ]
+  },
+  {
+    "id": "golf_cologny",
+    "nom": "Golf Club de Genève (Cologny)",
+    "description": "Parcours vallonné de Cologny offrant des vues plongeantes sur la rade.",
+    "coordonnees": [
+      46.2238,
+      6.1812
+    ],
+    "emoji": "⛳",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "golfeur_weekend",
+        "nom": "Golfeur du Week-end",
+        "rarete": "commun",
+        "description": "Chariot en remorque, il cherche sa balle dans le rough plus souvent qu'à son tour."
+      },
+      {
+        "id": "caddie_cologny",
+        "nom": "Caddie de Cologny",
+        "rarete": "rare",
+        "description": "Il connaît chaque pente du green et souffle le bon club avant chaque coup décisif."
+      },
+      {
+        "id": "maitre_green",
+        "nom": "Maître du Green",
+        "rarete": "legendaire",
+        "description": "Légende du club dont le swing parfait fait rouler la balle comme guidée par le vent."
+      }
+    ]
+  },
+  {
+    "id": "telepherique_saleve",
+    "nom": "Téléphérique du Salève",
+    "description": "Balcon rocheux de Genève, paradis des parapentistes et des randonneurs.",
+    "coordonnees": [
+      46.1397,
+      6.1861
+    ],
+    "emoji": "🪂",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "randonneur_saleve",
+        "nom": "Randonneur du Salève",
+        "rarete": "commun",
+        "description": "Bâtons en main, il grimpe les sentiers escarpés pour embrasser la rade vue d'en haut."
+      },
+      {
+        "id": "parapentiste_saleve",
+        "nom": "Parapentiste Aguerri",
+        "rarete": "rare",
+        "description": "D'un pas décidé, il s'élance de la falaise et s'offre la rade vue du ciel."
+      },
+      {
+        "id": "esprit_saleve",
+        "nom": "Esprit du Salève",
+        "rarete": "legendaire",
+        "description": "Géant de pierre veillant sur Genève, il commande aux vents qui portent les ailes."
+      }
+    ]
+  },
+  {
+    "id": "tennis_eaux_vives",
+    "nom": "Tennis Club des Eaux-Vives",
+    "description": "Courts ombragés du parc des Eaux-Vives, face au lac et à la rade.",
+    "coordonnees": [
+      46.2048,
+      6.1688
+    ],
+    "emoji": "🎾",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "tennisman_amateur",
+        "nom": "Tennisman Amateur",
+        "rarete": "commun",
+        "description": "Raquette au poing, il court après chaque balle dans un nuage de terre battue."
+      },
+      {
+        "id": "prof_tennis",
+        "nom": "Prof de Tennis",
+        "rarete": "rare",
+        "description": "Patiente, elle corrige les revers et fait grêler les balles au panier d'entraînement."
+      },
+      {
+        "id": "ace_legende",
+        "nom": "Légende de l'Ace",
+        "rarete": "legendaire",
+        "description": "Champion fantôme dont le service foudroyant n'a jamais laissé la moindre chance au filet."
+      }
+    ]
+  },
+  {
+    "id": "geneve_plage",
+    "nom": "Genève-Plage",
+    "description": "Bassins et plongeoirs au bord du lac, à Port-Noir.",
+    "coordonnees": [
+      46.2052,
+      6.1705
+    ],
+    "emoji": "🤿",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "baigneur_ete",
+        "nom": "Baigneur d'Été",
+        "rarete": "commun",
+        "description": "Serviette sur l'épaule, il enchaîne plongeons et bronzette dès les premiers beaux jours."
+      },
+      {
+        "id": "plongeur_haut_vol",
+        "nom": "Plongeur de Haut Vol",
+        "rarete": "rare",
+        "description": "Du plus haut tremplin, il déroule trois saltos avant de percer l'eau sans bruit."
+      },
+      {
+        "id": "gardien_bassins",
+        "nom": "Gardien des Bassins",
+        "rarete": "legendaire",
+        "description": "Naïade tutélaire dont le souffle lisse la surface des bassins au lever du jour."
+      }
+    ]
+  },
+  {
+    "id": "stade_evaux",
+    "nom": "Centre sportif des Évaux",
+    "description": "Grand domaine sportif d'Onex, terrains de rugby cernés de forêt.",
+    "coordonnees": [
+      46.1818,
+      6.1015
+    ],
+    "emoji": "🏉",
+    "categorie": "sport",
+    "serie": "Série 3 • Genève",
+    "cartes": [
+      {
+        "id": "troisieme_ligne",
+        "nom": "Troisième Ligne",
+        "rarete": "commun",
+        "description": "Boueux jusqu'aux oreilles, il plaque sans relâche sur les terrains détrempés des Évaux."
+      },
+      {
+        "id": "capitaine_melee",
+        "nom": "Capitaine de Mêlée",
+        "rarete": "rare",
+        "description": "Voix rauque, il soude son pack et arrache chaque ballon au fond du regroupement."
+      },
+      {
+        "id": "titan_evaux",
+        "nom": "Titan des Évaux",
+        "rarete": "legendaire",
+        "description": "Colosse légendaire dont la charge fait trembler la pelouse et reculer les huit d'en face."
+      }
+    ]
   }
 ]
