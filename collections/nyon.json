@@ -1,0 +1,482 @@
+[
+  {
+    "id": "chateau_nyon",
+    "nom": "Château de Nyon",
+    "description": "Château médiéval surplombant le lac Léman.",
+    "coordonnees": [
+      46.38199463383028,
+      6.240656405887657
+    ],
+    "emoji": "🏰",
+    "categorie": "historique",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "gardien_chateau",
+        "nom": "Gardien du Château",
+        "rarete": "commun",
+        "description": "Il veille attentivement sur les murs et les tours du château, jour et nuit."
+      },
+      {
+        "id": "chevalier_errant",
+        "nom": "Chevalier Errant",
+        "rarete": "rare",
+        "description": "De passage au château, il est toujours prêt à dégainer son épée pour l'honneur."
+      },
+      {
+        "id": "seigneur_chateau",
+        "nom": "Seigneur du Château",
+        "rarete": "legendaire",
+        "description": "En noble maître des lieux, son autorité sur Nyon est absolue et incontestée."
+      }
+    ]
+  },
+  {
+    "id": "musee_leman",
+    "nom": "Musée du Léman",
+    "description": "Musée dédié à l'histoire et à la nature du lac Léman.",
+    "coordonnees": [
+      46.37990952714474,
+      6.240259204749635
+    ],
+    "emoji": "🐟",
+    "categorie": "culture",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "conservateur_musee",
+        "nom": "Conservateur Curieux",
+        "rarete": "commun",
+        "description": "Passionné par l'histoire du lac, il catalogue chaque artefact avec soin."
+      },
+      {
+        "id": "pecheur_legendaire_musee",
+        "nom": "Pêcheur Légendaire",
+        "rarete": "rare",
+        "description": "Sa canne à la main, il connaît chaque secret caché du lac Léman."
+      },
+      {
+        "id": "oracle_lac",
+        "nom": "Oracle du Lac",
+        "rarete": "legendaire",
+        "description": "Voyant ancestral dont les prophéties énigmatiques sont dictées par les eaux."
+      }
+    ]
+  },
+  {
+    "id": "temple_nyon",
+    "nom": "Temple de Nyon",
+    "description": "Temple protestant du XIIe siècle, joyau architectural au cœur de la vieille ville.",
+    "coordonnees": [
+      46.38082778239824,
+      6.237889730071393
+    ],
+    "emoji": "⛪",
+    "categorie": "historique",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "choriste_temple",
+        "nom": "Choriste Dévoué",
+        "rarete": "commun",
+        "description": "Sa voix s'élève chaque dimanche sous les voûtes apaisantes du temple de Nyon."
+      },
+      {
+        "id": "pasteur_erudit",
+        "nom": "Pasteur Érudit",
+        "rarete": "rare",
+        "description": "Ses sermons érudits mêlent histoire locale et foi, captivant toute l'assemblée."
+      },
+      {
+        "id": "ange_temple",
+        "nom": "Ange Gardien",
+        "rarete": "legendaire",
+        "description": "Messager céleste qui veille sur le temple et ses fidèles depuis sa fondation."
+      }
+    ]
+  },
+  {
+    "id": "promenade_alpes",
+    "nom": "Promenade des Vieilles Murailles",
+    "description": "Promenade longeant les anciennes murailles de Nyon avec vue panoramique sur le lac.",
+    "coordonnees": [
+      46.38061318105974,
+      6.239652407055004
+    ],
+    "emoji": "🏔️",
+    "categorie": "nature",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "promeneur_matinal",
+        "nom": "Promeneur Matinal",
+        "rarete": "commun",
+        "description": "Il arpente la promenade chaque matin, contemplant le lac et les montagnes."
+      },
+      {
+        "id": "peintre_paysagiste",
+        "nom": "Peintre Paysagiste",
+        "rarete": "rare",
+        "description": "Son chevalet dressé face au lac, il capture la lumière changeante du matin."
+      },
+      {
+        "id": "esprit_alpes",
+        "nom": "Esprit des Alpes",
+        "rarete": "legendaire",
+        "description": "Être millénaire incarnant la majesté des sommets enneigés surplombant le lac."
+      }
+    ]
+  },
+  {
+    "id": "place_marroniers",
+    "nom": "Place des Marronniers",
+    "description": "Place emblématique ornée de colonnes romaines, avec vue imprenable sur le lac et scène d'événements culturels.",
+    "coordonnees": [
+      46.38004334060368,
+      6.2386501732531885
+    ],
+    "emoji": "🏛️",
+    "categorie": "historique",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "badaud_marroniers",
+        "nom": "Badaud de la Place",
+        "rarete": "commun",
+        "description": "Il s'attarde chaque jour sur la place, contemplant le lac entre deux colonnes romaines."
+      },
+      {
+        "id": "musicien_place",
+        "nom": "Musicien de la Place",
+        "rarete": "rare",
+        "description": "Sa musique résonne entre les colonnes romaines et se répand jusqu'au lac, captivant les passants."
+      },
+      {
+        "id": "genius_loci",
+        "nom": "Genius Loci",
+        "rarete": "legendaire",
+        "description": "Esprit tutélaire de la place, il veille sur les colonnes depuis la fondation de Noviodunum."
+      }
+    ]
+  },
+  {
+    "id": "port_nyon",
+    "nom": "Port de Nyon",
+    "description": "Port pittoresque avec bateaux de plaisance et vedettes du CGN.",
+    "coordonnees": [
+      46.37903218943814,
+      6.241242776103747
+    ],
+    "emoji": "⛵",
+    "categorie": "nature",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "marin_dimanche",
+        "nom": "Marin du Dimanche",
+        "rarete": "commun",
+        "description": "Il sort en bateau chaque weekend, heureux sous le soleil doré du Léman."
+      },
+      {
+        "id": "capitaine_cgn",
+        "nom": "Capitaine du CGN",
+        "rarete": "rare",
+        "description": "Il commande les majestueux bateaux Belle Époque de la Compagnie Générale de Navigation."
+      },
+      {
+        "id": "maitre_eaux",
+        "nom": "Maître des Eaux",
+        "rarete": "legendaire",
+        "description": "Divinité lacustre dont la bénédiction garantit une navigation sûre et prospère."
+      }
+    ]
+  },
+  {
+    "id": "theatre_marens",
+    "nom": "Théâtre de Marens",
+    "description": "Théâtre municipal accueillant spectacles, concerts et représentations culturelles.",
+    "coordonnees": [
+      46.38210913316385,
+      6.226017307094484
+    ],
+    "emoji": "🎭",
+    "categorie": "culture",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "spectateur_assidu",
+        "nom": "Spectateur Assidu",
+        "rarete": "commun",
+        "description": "Il ne manque jamais une représentation, premier arrivé et dernier à partir."
+      },
+      {
+        "id": "metteur_scene",
+        "nom": "Metteur en Scène",
+        "rarete": "rare",
+        "description": "Visionnaire créatif dont les spectacles ambitieux repoussent les limites de l'art."
+      },
+      {
+        "id": "masque_thalie",
+        "nom": "Masque de Thalie",
+        "rarete": "legendaire",
+        "description": "Incarnation divine de la comédie et du théâtre, présent depuis la nuit des temps."
+      }
+    ]
+  },
+  {
+    "id": "parc_boiron",
+    "nom": "Parc du Boiron",
+    "description": "Forêt alluviale protégée le long de la rivière du Boiron, refuge de biodiversité.",
+    "coordonnees": [
+      46.37522470684442,
+      6.2318879996844565
+    ],
+    "emoji": "🌿",
+    "categorie": "nature",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "randonneur_boiron",
+        "nom": "Randonneur du Boiron",
+        "rarete": "commun",
+        "description": "Il parcourt les sentiers longeant la rivière, respirant l'air frais de la forêt alluviale."
+      },
+      {
+        "id": "botaniste_foret",
+        "nom": "Botaniste de la Forêt",
+        "rarete": "rare",
+        "description": "Expert en flore alluviale, il répertorie les espèces rares protégées du Boiron."
+      },
+      {
+        "id": "naiade_boiron",
+        "nom": "Naïade du Boiron",
+        "rarete": "legendaire",
+        "description": "Nymphe des eaux vives dont le chant guide les animaux sauvages vers la lumière."
+      }
+    ]
+  },
+  {
+    "id": "plage_nyon",
+    "nom": "Plage de Nyon",
+    "description": "Plage publique sur les rives apaisantes du lac Léman, idéale en été.",
+    "coordonnees": [
+      46.37631172860652,
+      6.235272496622209
+    ],
+    "emoji": "🏖️",
+    "categorie": "nature",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "vacancier_bronze",
+        "nom": "Vacancier Bronzé",
+        "rarete": "commun",
+        "description": "Allongé sur sa serviette colorée, il profite de chaque rayon de soleil estival."
+      },
+      {
+        "id": "surfeur_lacs",
+        "nom": "Surfeur des Lacs",
+        "rarete": "rare",
+        "description": "Debout sur sa planche avec aisance, il dompte les vagues du Léman comme personne."
+      },
+      {
+        "id": "poseidon_lacustre",
+        "nom": "Poséidon Lacustre",
+        "rarete": "legendaire",
+        "description": "Dieu suprême des eaux douces, maître absolu et protecteur ultime du lac Léman."
+      }
+    ]
+  },
+  {
+    "id": "vestiges_romains",
+    "nom": "Amphithéâtre Romain",
+    "description": "Amphithéâtre romain remarquablement conservé, vestige du glorieux passé de Noviodunum.",
+    "coordonnees": [
+      46.383405083642955,
+      6.241172205852654
+    ],
+    "emoji": "🏛️",
+    "categorie": "historique",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "archeologue_passionne",
+        "nom": "Archéologue Passionné",
+        "rarete": "commun",
+        "description": "Il fouille la terre avec patience, cherchant les traces du passé romain de Nyon."
+      },
+      {
+        "id": "centurion_noviodunum",
+        "nom": "Centurion de Noviodunum",
+        "rarete": "rare",
+        "description": "Chef militaire aguerri qui commandait avec fierté la garnison romaine de la cité."
+      },
+      {
+        "id": "consul_noviodunum",
+        "nom": "Consul de Noviodunum",
+        "rarete": "legendaire",
+        "description": "Le plus haut magistrat de la colonie romaine, représentant direct de Rome sur le Léman."
+      }
+    ]
+  },
+  {
+    "id": "vignes_banderolle",
+    "nom": "Vignes de la Banderolle",
+    "description": "Vignoble en terrasse surplombant le lac Léman, produisant des vins blancs d'exception.",
+    "coordonnees": [
+      46.38788228573163,
+      6.2476506581654165
+    ],
+    "emoji": "🍇",
+    "categorie": "gastronomie",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "vendangeur_banderolle",
+        "nom": "Vendangeur Matinal",
+        "rarete": "commun",
+        "description": "Panier à la main, il cueille les grappes dorées dès l'aurore dans les vignes en terrasse."
+      },
+      {
+        "id": "sommelier_banderolle",
+        "nom": "Sommelier du Léman",
+        "rarete": "rare",
+        "description": "Son palais infaillible distingue le millésime au premier verre, les yeux fermés."
+      },
+      {
+        "id": "maitre_chai",
+        "nom": "Maître de Chai",
+        "rarete": "legendaire",
+        "description": "Alchimiste du vin dont les assemblages sont des œuvres d'art reconnues dans le monde entier."
+      }
+    ]
+  },
+  {
+    "id": "domaine_bois_bougy",
+    "nom": "Domaine de Bois-Bougy",
+    "description": "Ferme agricole avec vaches et cochons, nichée dans un écrin de verdure aux portes de Nyon.",
+    "coordonnees": [
+      46.376986626249135,
+      6.225850167237636
+    ],
+    "emoji": "🌾",
+    "categorie": "gastronomie",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "fermier_bougy",
+        "nom": "Fermier du Domaine",
+        "rarete": "commun",
+        "description": "Levé à l'aube, il s'occupe des bêtes et des champs avec une constance admirable."
+      },
+      {
+        "id": "chef_bougy",
+        "nom": "Chef de la Ferme",
+        "rarete": "rare",
+        "description": "Il cuisine la viande et les produits de la ferme avec talent, des cochons aux fromages maison."
+      },
+      {
+        "id": "seigneur_bougy",
+        "nom": "Seigneur de Bois-Bougy",
+        "rarete": "legendaire",
+        "description": "Fondateur légendaire du domaine, son esprit bienveillant veille sur les terres depuis des siècles."
+      }
+    ]
+  },
+  {
+    "id": "colovray",
+    "nom": "Centre Sportif de Colovray",
+    "description": "Complexe sportif complet au bord du lac : piscine, piste d'athlétisme, terrains de foot et skatepark.",
+    "coordonnees": [
+      46.3705431770283,
+      6.2273518984590295
+    ],
+    "emoji": "🏊",
+    "categorie": "sport",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "skateur_colovray",
+        "nom": "Skateur du Dimanche",
+        "rarete": "commun",
+        "description": "Chaque weekend, il perfectionne ses tricks au skatepark les yeux rivés sur le lac."
+      },
+      {
+        "id": "footballeur_colovray",
+        "nom": "Buteur Local",
+        "rarete": "rare",
+        "description": "Sa frappe puissante fait trembler les filets des stades de Colovray chaque week-end."
+      },
+      {
+        "id": "champion_colovray",
+        "nom": "Champion de Colovray",
+        "rarete": "legendaire",
+        "description": "Légende sportive nyonnaise dont les records sur la piste restent inégalés à ce jour."
+      }
+    ]
+  },
+  {
+    "id": "usine_a_gaz",
+    "nom": "L'Usine à Gaz",
+    "description": "Salle de concert emblématique de Nyon, berceau de la scène musicale locale et régionale.",
+    "coordonnees": [
+      46.38387620933021,
+      6.244011722847108
+    ],
+    "emoji": "🎸",
+    "categorie": "culture",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "spectateur_gaz",
+        "nom": "Spectateur Fidèle",
+        "rarete": "commun",
+        "description": "Il ne rate aucun concert à l'Usine, billet en main dès l'ouverture de la billetterie."
+      },
+      {
+        "id": "musicien_local",
+        "nom": "Musicien Local",
+        "rarete": "rare",
+        "description": "Artiste nyonnais qui a fait ses premières armes sur la scène mythique de l'Usine à Gaz."
+      },
+      {
+        "id": "legende_gaz",
+        "nom": "Légende de la Scène",
+        "rarete": "legendaire",
+        "description": "Icône musicale dont le concert à l'Usine à Gaz est entré dans la légende de Nyon."
+      }
+    ]
+  },
+  {
+    "id": "ecole_cossy",
+    "nom": "École de Cossy",
+    "description": "École nyonnaise ornée d'une sculpture abstraite moderne dans sa cour, œuvre d'art public qui intrigue élèves et passants.",
+    "coordonnees": [
+      46.38944734630556,
+      6.22433125040781
+    ],
+    "emoji": "🎨",
+    "categorie": "culture",
+    "serie": "Série 1 • Nyon",
+    "cartes": [
+      {
+        "id": "eleve_cossy",
+        "nom": "Élève Curieux",
+        "rarete": "commun",
+        "description": "Il contemple la sculpture abstraite dans la cour, cherchant à en percer le mystère."
+      },
+      {
+        "id": "sculpteur_cossy",
+        "nom": "Sculpteur Visionnaire",
+        "rarete": "rare",
+        "description": "L'artiste qui a conçu cette œuvre abstraite moderne, cherchant à provoquer la réflexion dans un espace scolaire."
+      },
+      {
+        "id": "muse_cossy",
+        "nom": "Muse Flottante",
+        "rarete": "legendaire",
+        "description": "Incarnation de la sculpture abstraite, elle défie la gravité et l'entendement depuis son installation dans la cour."
+      }
+    ]
+  }
+]

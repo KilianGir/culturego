@@ -1776,636 +1776,22 @@ const RARETE_CONFIG = {
   },
 };
 
-const LIEUX = [
-  {
-    id: 'chateau_nyon',
-    nom: 'Château de Nyon',
-    description: 'Château médiéval surplombant le lac Léman.',
-    coordonnees: [46.38199463383028, 6.240656405887657],
-    emoji: '🏰',
-    categorie: 'historique',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'gardien_chateau', nom: 'Gardien du Château', rarete: 'commun', description: 'Il veille attentivement sur les murs et les tours du château, jour et nuit.' },
-      { id: 'chevalier_errant', nom: 'Chevalier Errant', rarete: 'rare', description: 'De passage au château, il est toujours prêt à dégainer son épée pour l\'honneur.' },
-      { id: 'seigneur_chateau', nom: 'Seigneur du Château', rarete: 'legendaire', description: 'En noble maître des lieux, son autorité sur Nyon est absolue et incontestée.' },
-    ],
-  },
-  {
-    id: 'musee_leman',
-    nom: 'Musée du Léman',
-    description: 'Musée dédié à l\'histoire et à la nature du lac Léman.',
-    coordonnees: [46.37990952714474, 6.240259204749635],
-    emoji: '🐟',
-    categorie: 'culture',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'conservateur_musee', nom: 'Conservateur Curieux', rarete: 'commun', description: 'Passionné par l\'histoire du lac, il catalogue chaque artefact avec soin.' },
-      { id: 'pecheur_legendaire_musee', nom: 'Pêcheur Légendaire', rarete: 'rare', description: 'Sa canne à la main, il connaît chaque secret caché du lac Léman.' },
-      { id: 'oracle_lac', nom: 'Oracle du Lac', rarete: 'legendaire', description: 'Voyant ancestral dont les prophéties énigmatiques sont dictées par les eaux.' },
-    ],
-  },
-  {
-    id: 'temple_nyon',
-    nom: 'Temple de Nyon',
-    description: 'Temple protestant du XIIe siècle, joyau architectural au cœur de la vieille ville.',
-    coordonnees: [46.38082778239824, 6.237889730071393],
-    emoji: '⛪',
-    categorie: 'historique',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'choriste_temple', nom: 'Choriste Dévoué', rarete: 'commun', description: 'Sa voix s\'élève chaque dimanche sous les voûtes apaisantes du temple de Nyon.' },
-      { id: 'pasteur_erudit', nom: 'Pasteur Érudit', rarete: 'rare', description: 'Ses sermons érudits mêlent histoire locale et foi, captivant toute l\'assemblée.' },
-      { id: 'ange_temple', nom: 'Ange Gardien', rarete: 'legendaire', description: 'Messager céleste qui veille sur le temple et ses fidèles depuis sa fondation.' },
-    ],
-  },
-  {
-    id: 'promenade_alpes',
-    nom: 'Promenade des Vieilles Murailles',
-    description: 'Promenade longeant les anciennes murailles de Nyon avec vue panoramique sur le lac.',
-    coordonnees: [46.38061318105974, 6.239652407055004],
-    emoji: '🏔️',
-    categorie: 'nature',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'promeneur_matinal', nom: 'Promeneur Matinal', rarete: 'commun', description: 'Il arpente la promenade chaque matin, contemplant le lac et les montagnes.' },
-      { id: 'peintre_paysagiste', nom: 'Peintre Paysagiste', rarete: 'rare', description: 'Son chevalet dressé face au lac, il capture la lumière changeante du matin.' },
-      { id: 'esprit_alpes', nom: 'Esprit des Alpes', rarete: 'legendaire', description: 'Être millénaire incarnant la majesté des sommets enneigés surplombant le lac.' },
-    ],
-  },
-  {
-    id: 'place_marroniers',
-    nom: 'Place des Marronniers',
-    description: 'Place emblématique ornée de colonnes romaines, avec vue imprenable sur le lac et scène d\'événements culturels.',
-    coordonnees: [46.38004334060368, 6.2386501732531885],
-    emoji: '🏛️',
-    categorie: 'historique',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'badaud_marroniers', nom: 'Badaud de la Place', rarete: 'commun', description: 'Il s\'attarde chaque jour sur la place, contemplant le lac entre deux colonnes romaines.' },
-      { id: 'musicien_place', nom: 'Musicien de la Place', rarete: 'rare', description: 'Sa musique résonne entre les colonnes romaines et se répand jusqu\'au lac, captivant les passants.' },
-      { id: 'genius_loci', nom: 'Genius Loci', rarete: 'legendaire', description: 'Esprit tutélaire de la place, il veille sur les colonnes depuis la fondation de Noviodunum.' },
-    ],
-  },
-  {
-    id: 'port_nyon',
-    nom: 'Port de Nyon',
-    description: 'Port pittoresque avec bateaux de plaisance et vedettes du CGN.',
-    coordonnees: [46.37903218943814, 6.241242776103747],
-    emoji: '⛵',
-    categorie: 'nature',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'marin_dimanche', nom: 'Marin du Dimanche', rarete: 'commun', description: 'Il sort en bateau chaque weekend, heureux sous le soleil doré du Léman.' },
-      { id: 'capitaine_cgn', nom: 'Capitaine du CGN', rarete: 'rare', description: 'Il commande les majestueux bateaux Belle Époque de la Compagnie Générale de Navigation.' },
-      { id: 'maitre_eaux', nom: 'Maître des Eaux', rarete: 'legendaire', description: 'Divinité lacustre dont la bénédiction garantit une navigation sûre et prospère.' },
-    ],
-  },
-  {
-    id: 'theatre_marens',
-    nom: 'Théâtre de Marens',
-    description: 'Théâtre municipal accueillant spectacles, concerts et représentations culturelles.',
-    coordonnees: [46.38210913316385, 6.226017307094484],
-    emoji: '🎭',
-    categorie: 'culture',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'spectateur_assidu', nom: 'Spectateur Assidu', rarete: 'commun', description: 'Il ne manque jamais une représentation, premier arrivé et dernier à partir.' },
-      { id: 'metteur_scene', nom: 'Metteur en Scène', rarete: 'rare', description: 'Visionnaire créatif dont les spectacles ambitieux repoussent les limites de l\'art.' },
-      { id: 'masque_thalie', nom: 'Masque de Thalie', rarete: 'legendaire', description: 'Incarnation divine de la comédie et du théâtre, présent depuis la nuit des temps.' },
-    ],
-  },
-  {
-    id: 'parc_boiron',
-    nom: 'Parc du Boiron',
-    description: 'Forêt alluviale protégée le long de la rivière du Boiron, refuge de biodiversité.',
-    coordonnees: [46.37522470684442, 6.2318879996844565],
-    emoji: '🌿',
-    categorie: 'nature',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'randonneur_boiron', nom: 'Randonneur du Boiron', rarete: 'commun', description: 'Il parcourt les sentiers longeant la rivière, respirant l\'air frais de la forêt alluviale.' },
-      { id: 'botaniste_foret', nom: 'Botaniste de la Forêt', rarete: 'rare', description: 'Expert en flore alluviale, il répertorie les espèces rares protégées du Boiron.' },
-      { id: 'naiade_boiron', nom: 'Naïade du Boiron', rarete: 'legendaire', description: 'Nymphe des eaux vives dont le chant guide les animaux sauvages vers la lumière.' },
-    ],
-  },
-  {
-    id: 'plage_nyon',
-    nom: 'Plage de Nyon',
-    description: 'Plage publique sur les rives apaisantes du lac Léman, idéale en été.',
-    coordonnees: [46.37631172860652, 6.235272496622209],
-    emoji: '🏖️',
-    categorie: 'nature',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'vacancier_bronze', nom: 'Vacancier Bronzé', rarete: 'commun', description: 'Allongé sur sa serviette colorée, il profite de chaque rayon de soleil estival.' },
-      { id: 'surfeur_lacs', nom: 'Surfeur des Lacs', rarete: 'rare', description: 'Debout sur sa planche avec aisance, il dompte les vagues du Léman comme personne.' },
-      { id: 'poseidon_lacustre', nom: 'Poséidon Lacustre', rarete: 'legendaire', description: 'Dieu suprême des eaux douces, maître absolu et protecteur ultime du lac Léman.' },
-    ],
-  },
-  {
-    id: 'vestiges_romains',
-    nom: 'Amphithéâtre Romain',
-    description: 'Amphithéâtre romain remarquablement conservé, vestige du glorieux passé de Noviodunum.',
-    coordonnees: [46.383405083642955, 6.241172205852654],
-    emoji: '🏛️',
-    categorie: 'historique',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'archeologue_passionne', nom: 'Archéologue Passionné', rarete: 'commun', description: 'Il fouille la terre avec patience, cherchant les traces du passé romain de Nyon.' },
-      { id: 'centurion_noviodunum', nom: 'Centurion de Noviodunum', rarete: 'rare', description: 'Chef militaire aguerri qui commandait avec fierté la garnison romaine de la cité.' },
-      { id: 'consul_noviodunum', nom: 'Consul de Noviodunum', rarete: 'legendaire', description: 'Le plus haut magistrat de la colonie romaine, représentant direct de Rome sur le Léman.' },
-    ],
-  },
-  {
-    id: 'vignes_banderolle',
-    nom: 'Vignes de la Banderolle',
-    description: 'Vignoble en terrasse surplombant le lac Léman, produisant des vins blancs d\'exception.',
-    coordonnees: [46.38788228573163, 6.2476506581654165],
-    emoji: '🍇',
-    categorie: 'gastronomie',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'vendangeur_banderolle', nom: 'Vendangeur Matinal', rarete: 'commun', description: 'Panier à la main, il cueille les grappes dorées dès l\'aurore dans les vignes en terrasse.' },
-      { id: 'sommelier_banderolle', nom: 'Sommelier du Léman', rarete: 'rare', description: 'Son palais infaillible distingue le millésime au premier verre, les yeux fermés.' },
-      { id: 'maitre_chai', nom: 'Maître de Chai', rarete: 'legendaire', description: 'Alchimiste du vin dont les assemblages sont des œuvres d\'art reconnues dans le monde entier.' },
-    ],
-  },
-  {
-    id: 'domaine_bois_bougy',
-    nom: 'Domaine de Bois-Bougy',
-    description: 'Ferme agricole avec vaches et cochons, nichée dans un écrin de verdure aux portes de Nyon.',
-    coordonnees: [46.376986626249135, 6.225850167237636],
-    emoji: '🌾',
-    categorie: 'gastronomie',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'fermier_bougy', nom: 'Fermier du Domaine', rarete: 'commun', description: 'Levé à l\'aube, il s\'occupe des bêtes et des champs avec une constance admirable.' },
-      { id: 'chef_bougy', nom: 'Chef de la Ferme', rarete: 'rare', description: 'Il cuisine la viande et les produits de la ferme avec talent, des cochons aux fromages maison.' },
-      { id: 'seigneur_bougy', nom: 'Seigneur de Bois-Bougy', rarete: 'legendaire', description: 'Fondateur légendaire du domaine, son esprit bienveillant veille sur les terres depuis des siècles.' },
-    ],
-  },
-  {
-    id: 'colovray',
-    nom: 'Centre Sportif de Colovray',
-    description: 'Complexe sportif complet au bord du lac : piscine, piste d\'athlétisme, terrains de foot et skatepark.',
-    coordonnees: [46.3705431770283, 6.2273518984590295],
-    emoji: '🏊',
-    categorie: 'sport',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'skateur_colovray', nom: 'Skateur du Dimanche', rarete: 'commun', description: 'Chaque weekend, il perfectionne ses tricks au skatepark les yeux rivés sur le lac.' },
-      { id: 'footballeur_colovray', nom: 'Buteur Local', rarete: 'rare', description: 'Sa frappe puissante fait trembler les filets des stades de Colovray chaque week-end.' },
-      { id: 'champion_colovray', nom: 'Champion de Colovray', rarete: 'legendaire', description: 'Légende sportive nyonnaise dont les records sur la piste restent inégalés à ce jour.' },
-    ],
-  },
-  {
-    id: 'usine_a_gaz',
-    nom: 'L\'Usine à Gaz',
-    description: 'Salle de concert emblématique de Nyon, berceau de la scène musicale locale et régionale.',
-    coordonnees: [46.38387620933021, 6.244011722847108],
-    emoji: '🎸',
-    categorie: 'culture',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'spectateur_gaz', nom: 'Spectateur Fidèle', rarete: 'commun', description: 'Il ne rate aucun concert à l\'Usine, billet en main dès l\'ouverture de la billetterie.' },
-      { id: 'musicien_local', nom: 'Musicien Local', rarete: 'rare', description: 'Artiste nyonnais qui a fait ses premières armes sur la scène mythique de l\'Usine à Gaz.' },
-      { id: 'legende_gaz', nom: 'Légende de la Scène', rarete: 'legendaire', description: 'Icône musicale dont le concert à l\'Usine à Gaz est entré dans la légende de Nyon.' },
-    ],
-  },
-  {
-    id: 'ecole_cossy',
-    nom: 'École de Cossy',
-    description: 'École nyonnaise ornée d\'une sculpture abstraite moderne dans sa cour, œuvre d\'art public qui intrigue élèves et passants.',
-    coordonnees: [46.38944734630556, 6.22433125040781],
-    emoji: '🎨',
-    categorie: 'culture',
-    serie: 'Série 1 • Nyon',
-    cartes: [
-      { id: 'eleve_cossy', nom: 'Élève Curieux', rarete: 'commun', description: 'Il contemple la sculpture abstraite dans la cour, cherchant à en percer le mystère.' },
-      { id: 'sculpteur_cossy', nom: 'Sculpteur Visionnaire', rarete: 'rare', description: 'L\'artiste qui a conçu cette œuvre abstraite moderne, cherchant à provoquer la réflexion dans un espace scolaire.' },
-      { id: 'muse_cossy', nom: 'Muse Flottante', rarete: 'legendaire', description: 'Incarnation de la sculpture abstraite, elle défie la gravité et l\'entendement depuis son installation dans la cour.' },
-    ],
-  },
+// Données chargées dynamiquement depuis collections/manifest.json (bootstrap en fin de script).
+let LIEUX = [];
+let TOUTES_LES_CARTES = [];
+let NOMBRE_TOTAL_CARTES = 0;
+let SERIES_MAP = [];
+let SERIES_COL = ['toutes'];
 
-  // ─── SÉRIE 2 • RE33 ───────────────────────────────────────────────────────
-
-  {
-    id: 'gare_annemasse',
-    nom: 'Gare d\'Annemasse',
-    description: 'Porte d\'entrée franco-suisse, point de départ du RE33 côté France.',
-    coordonnees: [46.19930117621338, 6.236515416912813],
-    emoji: '🇫🇷',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'frontalier_annemasse', nom: 'Le Frontalier', rarete: 'commun', description: 'Chaque matin il franchit la frontière, badge CFF en main, café en route.' },
-      { id: 'accordeoniste_annemasse', nom: 'L\'Accordéoniste', rarete: 'rare', description: 'Sa musette résonne sur le quai, brouillant la frontière entre deux cultures.' },
-      { id: 'patron_huitieme_annemasse', nom: 'La Patronne du Huitième', rarete: 'legendaire', description: 'Son bar face à la gare voit défiler depuis des décennies voyageurs, frontaliers et noctambules des deux pays.' },
-    ],
-  },
-  {
-    id: 'gare_chene_bourg',
-    nom: 'Gare de Chêne-Bourg',
-    description: 'Quartier genevois au carrefour des tramways et du rail, entre ville et campagne.',
-    coordonnees: [46.19660349666, 6.197319539842232],
-    emoji: '🌳',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'pendulaire_chene', nom: 'Le Pendulaire Genevois', rarete: 'commun', description: 'Il enchaîne tram et RE33 avec une précision horlogère, les yeux rivés sur son téléphone.' },
-      { id: 'photographe_chene', nom: 'Le Photographe Urbain', rarete: 'rare', description: 'Il capture la vie ordinaire du quartier avec un œil qui transforme le banal en poésie.' },
-      { id: 'patron_coin_espoir_chene', nom: 'Le Patron du Coin de l\'Espoir', rarete: 'legendaire', description: 'Elle tient son café depuis vingt ans, arbitre incontestée des débats de comptoir entre deux trains.' },
-    ],
-  },
-  {
-    id: 'gare_eaux_vives',
-    nom: 'Gare de Genève-Eaux-Vives',
-    description: 'Quartier vivant de Genève, entre le lac et les boutiques, au cœur du CEVA.',
-    coordonnees: [46.200998333487476, 6.165810478981852],
-    emoji: '💧',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'joggeur_eaux_vives', nom: 'Le Joggeur du Lac', rarete: 'commun', description: 'Il longe les quais chaque matin avant de sauter dans le RE33, aussi ponctuel que le jet d\'eau.' },
-      { id: 'photo_jet_eau', nom: 'La Photographe du Jet d\'Eau', rarete: 'rare', description: 'Elle guette la lumière parfaite sur le jet d\'eau depuis les quais, reflex à la main.' },
-      { id: 'patron_gigi_cucina', nom: 'Le Patron de Gigi Cucina', rarete: 'legendaire', description: 'Son restaurant-bar donne sur le quartier ; il connaît par leur prénom chaque habitant depuis l\'ouverture du CEVA.' },
-    ],
-  },
-  {
-    id: 'gare_champel',
-    nom: 'Gare de Genève-Champel',
-    description: 'Quartier résidentiel genevois à deux pas des HUG, au calme au-dessus de la ville.',
-    coordonnees: [46.192278879311395, 6.153567640417037],
-    emoji: '🏥',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'etudiant_medecine', nom: 'L\'Étudiant en Médecine', rarete: 'commun', description: 'Polycopié sous le bras, il somnole dans le RE33 entre deux gardes aux HUG.' },
-      { id: 'chercheur_oms', nom: 'Le Chercheur de l\'OMS', rarete: 'rare', description: 'Il travaille sur des pandémies mondiales depuis un bureau discret des Organisations Internationales.' },
-      { id: 'patron_pompette_champel', nom: 'La Patronne de Pompette', rarete: 'legendaire', description: 'Son bar est le rendez-vous où médecins, professeurs et patients se retrouvent à égalité devant un verre.' },
-    ],
-  },
-  {
-    id: 'gare_lancy_bachet',
-    nom: 'Gare de Lancy-Bachet',
-    description: 'Quartier industriel et sportif de Genève, au pied du stade du Servette FC.',
-    coordonnees: [46.174242989714585, 6.12972544699037],
-    emoji: '⚽',
-    categorie: 'sport',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'supporter_servette', nom: 'Le Supporter du Servette', rarete: 'commun', description: 'Écharpe grenat autour du cou, il prend le RE33 même pour les matchs à domicile, par habitude.' },
-      { id: 'skateuse_bachet', nom: 'La Skateuse du Stade', rarete: 'rare', description: 'Elle ride les dalles du stade vide les soirs de semaine, ses tricks éclairés par les projecteurs en veille.' },
-      { id: 'patron_village_soir', nom: 'Le Patron du Village du Soir', rarete: 'legendaire', description: 'Son comptoir devient la prolongation du terrain le soir de match, épicentre de toutes les émotions grenats.' },
-    ],
-  },
-  {
-    id: 'gare_lancy_pont_rouge',
-    nom: 'Gare de Lancy-Pont-Rouge',
-    description: 'Nouveau quartier genevois en plein essor, symbole de la métamorphose urbaine de la rive gauche.',
-    coordonnees: [46.1869358186522, 6.125172528901489],
-    emoji: '🌉',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'architecte_stagiaire', nom: 'L\'Architecte Stagiaire', rarete: 'commun', description: 'Il dessine le quartier de demain sur son laptop dans le train, rêvant de laisser sa marque.' },
-      { id: 'urbaniste_pontrouge', nom: 'L\'Urbaniste Visionnaire', rarete: 'rare', description: 'C\'est lui qui a imaginé les espaces verts entre les tours, transformant un désert bétonné en quartier vivable.' },
-      { id: 'patron_kulture_bar', nom: 'La Patronne du Kulture Bar', rarete: 'legendaire', description: 'Premier à ouvrir dans le quartier neuf, il a vu pousser les immeubles depuis sa terrasse et accueilli leurs premiers habitants.' },
-    ],
-  },
-  {
-    id: 'gare_geneve',
-    nom: 'Gare de Genève',
-    description: 'Gare Cornavin, carrefour international au cœur de la capitale diplomatique mondiale.',
-    coordonnees: [46.21056452712161, 6.143022845293368],
-    emoji: '🌍',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'voyageur_perdu_geneve', nom: 'Le Voyageur Perdu', rarete: 'commun', description: 'Il cherche son quai depuis dix minutes, plan en main, dans l\'une des gares les plus internationales d\'Europe.' },
-      { id: 'agent_change', nom: 'L\'Agent de Change', rarete: 'rare', description: 'Il jongle avec les devises du monde entier depuis son bureau vitré face aux guichets.' },
-      { id: 'patron_petite_reine_geneve', nom: 'Le Patron de La Petite Reine', rarete: 'legendaire', description: 'Depuis son comptoir face aux quais, il a vu passer des présidents, des réfugiés et tous ceux d\'entre-deux.' },
-    ],
-  },
-  {
-    id: 'gare_coppet',
-    nom: 'Gare de Coppet',
-    description: 'Bourg historique dominé par son château, berceau du libéralisme européen au temps de Madame de Staël.',
-    coordonnees: [46.3173916460273, 6.187884804094795],
-    emoji: '🏰',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'pecheur_coppet', nom: 'Le Pêcheur de Coppet', rarete: 'commun', description: 'Il tend ses lignes au bord du Léman depuis l\'enfance, indifférent aux trains qui passent derrière lui.' },
-      { id: 'historien_coppet', nom: 'L\'Historien du Château', rarete: 'rare', description: 'Il peut réciter de mémoire chaque visite illustre qu\'a reçue le château au fil des siècles.' },
-      { id: 'patron_cube_coppet', nom: 'La Patronne du The Cube', rarete: 'legendaire', description: 'Son bar accueille voyageurs et locaux depuis des générations, dans l\'ombre bienveillante du château.' },
-    ],
-  },
-  {
-    id: 'gare_nyon_re33',
-    nom: 'Gare de Nyon',
-    description: 'Le nœud ferroviaire de Nyon, où le RE33 marque sa pause lacustre avant de poursuivre vers Lausanne.',
-    coordonnees: [46.38440949802272, 6.236026833505711],
-    emoji: '🚉',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'employe_fifa', nom: 'L\'Employé de la FIFA', rarete: 'commun', description: 'Il descend à Nyon chaque matin depuis Genève, badge UEFA en poche, café à la main.' },
-      { id: 'scout_foot', nom: 'Le Scout de Foot', rarete: 'rare', description: 'Il parcourt l\'Europe pour dénicher les futurs champions, mais rentre toujours dormir à Nyon.' },
-      { id: 'patron_pub_gare_nyon', nom: 'Le Patron du Pub de la Gare', rarete: 'legendaire', description: 'Son bar est le premier et dernier verre de tous ceux qui transitent par Nyon, UEFA ou pas.' },
-    ],
-  },
-  {
-    id: 'gare_gland',
-    nom: 'Gare de Gland',
-    description: 'Petit bourg vaudois entre vignobles et Léman, en pleine mutation avec l\'arrivée de nouvelles familles.',
-    coordonnees: [46.42002275870674, 6.269095276468904],
-    emoji: '🌰',
-    categorie: 'nature',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'habitant_gland', nom: 'L\'Habitant du Village', rarete: 'commun', description: 'Il est né ici, y a grandi, et trouve que Gland change trop vite depuis que le RE33 s\'y arrête.' },
-      { id: 'architecte_lac_gland', nom: 'L\'Architecte du Lac', rarete: 'rare', description: 'Il conçoit les nouvelles villas lacustres en cherchant l\'équilibre entre vue sur l\'eau et respect du paysage.' },
-      { id: 'patron_dive_bar_gland', nom: 'La Patronne du Dive Bär', rarete: 'legendaire', description: 'Son café reste le seul endroit où tout Gland finit par se croiser, entre deux trains et deux verres.' },
-    ],
-  },
-  {
-    id: 'gare_rolle',
-    nom: 'Gare de Rolle',
-    description: 'Cité médiévale lacustre dominée par son château, réputée pour ses vins et son port.',
-    coordonnees: [46.46282752847035, 6.336439901354842],
-    emoji: '⚓',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'promeneur_port_rolle', nom: 'Le Promeneur du Port', rarete: 'commun', description: 'Il fait le tour du port chaque soir, observant les voiliers se balancer dans la lumière du couchant.' },
-      { id: 'conservateur_chateau_rolle', nom: 'Le Conservateur du Château', rarete: 'rare', description: 'Il garde les archives du château de Rolle et peut raconter six siècles d\'histoire sans notes.' },
-      { id: 'patron_chemin_de_fer_rolle', nom: 'Le Patron du Chemin-de-Fer', rarete: 'legendaire', description: 'Son restaurant face aux quais accueille voyageurs et vignerons depuis plus d\'un siècle, les pieds dans l\'eau.' },
-    ],
-  },
-  {
-    id: 'gare_allaman',
-    nom: 'Gare d\'Allaman',
-    description: 'Village vaudois niché entre vignes et château, producteur de vins blancs d\'exception.',
-    coordonnees: [46.475769348181984, 6.399683203598423],
-    emoji: '🍷',
-    categorie: 'gastronomie',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'vendangeur_allaman', nom: 'Le Vendangeur d\'Allaman', rarete: 'commun', description: 'Il cueille les grappes en terrasse depuis l\'enfance, les mains tachées de jus de chasselas.' },
-      { id: 'caviste_allaman', nom: 'Le Caviste Passionné', rarete: 'rare', description: 'Sa sélection dépasse largement la région ; il importe les grands crus qu\'il boit lui-même en priorité.' },
-      { id: 'patron_pizzeria_gare_allaman', nom: 'La Patronne de la Pizzeria', rarete: 'legendaire', description: 'Sa pizzeria jouxte la gare ; entre deux trains et une bonne bouteille de chasselas local, personne ne repart le ventre vide.' },
-    ],
-  },
-  {
-    id: 'gare_morges',
-    nom: 'Gare de Morges',
-    description: 'Ville lacustre vaudoise célèbre pour son festival de la tulipe et son château du XIIIe siècle.',
-    coordonnees: [46.51104095421675, 6.494029792030009],
-    emoji: '🌸',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'fan_tulipes', nom: 'La Photographe des Tulipes', rarete: 'commun', description: 'Elle revient chaque printemps avec son appareil, immortalisant les cent mille tulipes du parc de l\'Indépendance.' },
-      { id: 'photographe_festival', nom: 'Le Photographe du Festival', rarete: 'rare', description: 'Son portfolio du Festival de la Tulipe a fait le tour des magazines horticoles européens.' },
-      { id: 'patron_black_horse_morges', nom: 'La Patronne du Black Horse', rarete: 'legendaire', description: 'Son pub face à la gare est le rendez-vous de tous les Morgiens après le travail, saison des tulipes ou pas.' },
-    ],
-  },
-  {
-    id: 'gare_renens',
-    nom: 'Gare de Renens',
-    description: 'Ville vaudoise dynamique à deux pas de l\'EPFL, carrefour estudiantin et multiculturel.',
-    coordonnees: [46.537030771217154, 6.578896552610359],
-    emoji: '🎓',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'etudiant_epfl', nom: 'L\'Étudiant de l\'EPFL', rarete: 'commun', description: 'Il jongle entre le RE33 et le tram vers l\'EPFL, son vélo pliant sous le bras et son Mac sur l\'épaule.' },
-      { id: 'ingenieur_epfl', nom: 'L\'Ingénieur de l\'EPFL', rarete: 'rare', description: 'Son prototype de drone autonome a été testé pour la première fois dans les coursives de l\'EPFL à deux pas d\'ici.' },
-      { id: 'patron_big_ben_renens', nom: 'La Patronne du Big Ben', rarete: 'legendaire', description: 'Son pub face à la gare est le premier bureau de milliers d\'étudiants, ouvert avant le premier cours et après le dernier.' },
-    ],
-  },
-  {
-    id: 'gare_lausanne',
-    nom: 'Gare de Lausanne',
-    description: 'Capitale olympique mondiale, ville de culture et d\'institutions sur les hauteurs du Léman.',
-    coordonnees: [46.51706488267252, 6.629187425413109],
-    emoji: '🏅',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'touriste_cio', nom: 'Le Touriste du Musée Olympique', rarete: 'commun', description: 'Il débarque à Lausanne uniquement pour le Musée Olympique et repart avec un drapeau des JO en souvenir.' },
-      { id: 'athlete_olympique', nom: 'L\'Athlète Olympique', rarete: 'rare', description: 'Il s\'entraîne au bord du lac chaque matin avant de remonter au CIO pour ses réunions de préparation.' },
-      { id: 'patron_gosses_quebec_lausanne', nom: 'Le Patron des Gosses du Québec', rarete: 'legendaire', description: 'Son bar est une institution lausannoise ; athlètes, artistes et travailleurs s\'y croisent depuis l\'ouverture.' },
-    ],
-  },
-  {
-    id: 'gare_vevey',
-    nom: 'Gare de Vevey',
-    description: 'Cité des images entre Nestlé et Chaplin, au bord du lac et au pied des vignobles classés à l\'UNESCO.',
-    coordonnees: [46.46306036795287, 6.84324824903028],
-    emoji: '🎬',
-    categorie: 'gastronomie',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'fan_chaplin', nom: 'Le Fan de Chaplin', rarete: 'commun', description: 'Il fait le pèlerinage au Chaplin\'s World chaque année et connaît chaque film par cœur.' },
-      { id: 'photographe_vignerons', nom: 'La Photographe de la Fête', rarete: 'rare', description: 'Elle documente depuis vingt ans la fête la plus rare du monde, qui n\'a lieu que trois fois par siècle.' },
-      { id: 'patron_taphouse_vevey', nom: 'La Patronne du Taphouse', rarete: 'legendaire', description: 'Son bar est le rendez-vous de tous les créatifs de la région, dans l\'esprit des cafés littéraires d\'autrefois.' },
-    ],
-  },
-  {
-    id: 'gare_montreux',
-    nom: 'Gare de Montreux',
-    description: 'Perle de la Riviera vaudoise, berceau du jazz festival le plus célèbre d\'Europe.',
-    coordonnees: [46.435883707285505, 6.910414587671802],
-    emoji: '🎵',
-    categorie: 'culture',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'festivalier_jazz', nom: 'Le Festivalier du Jazz', rarete: 'commun', description: 'Il plante sa chaise devant la scène du lac chaque juillet depuis trente ans, accréditation en bandoulière.' },
-      { id: 'musicien_festival', nom: 'Le Musicien du Festival', rarete: 'rare', description: 'Il a joué sur la petite scène du Miles Davis Hall avant d\'être propulsé sur les grandes scènes mondiales.' },
-      { id: 'patron_45_bar_montreux', nom: 'La Patronne du 45 Bar', rarete: 'legendaire', description: 'Son bar face au lac tourne à fond depuis des années, épicentre de la nuit montreusienne entre deux festivals.' },
-    ],
-  },
-  {
-    id: 'gare_villeneuve',
-    nom: 'Gare de Villeneuve',
-    description: 'Bout du lac Léman, porte des Alpes, là où les eaux douces laissent place aux rochers.',
-    coordonnees: [46.398363244309735, 6.926956893542117],
-    emoji: '🏔️',
-    categorie: 'nature',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'dernier_voyageur', nom: 'Le Dernier Voyageur', rarete: 'commun', description: 'Il descend toujours à Villeneuve par erreur, mais finit par trouver que c\'est la plus belle erreur qu\'il ait faite.' },
-      { id: 'explorateur_alpes', nom: 'L\'Explorateur des Alpes', rarete: 'rare', description: 'Il part en montagne depuis Villeneuve avec son sac de 20 kg et revient trois semaines plus tard, barbu et serein.' },
-      { id: 'patron_queensunset_villeneuve', nom: 'La Patronne du Queen\'Sunset', rarete: 'legendaire', description: 'Son bar au bout du lac capte les derniers rayons sur les Alpes ; personne ne repart sans avoir vu le soleil se coucher.' },
-    ],
-  },
-  {
-    id: 'gare_aigle',
-    nom: 'Gare d\'Aigle',
-    description: 'Capitale du Chablais vaudois, carrefour des vins blancs et des remontées mécaniques des Alpes.',
-    coordonnees: [46.316849106247986, 6.963762627872611],
-    emoji: '🦅',
-    categorie: 'gastronomie',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'vigneron_aigle', nom: 'Le Vigneron d\'Aigle', rarete: 'commun', description: 'Ses pieds connaissent chaque pierre des terrasses ; son chasselas d\'Aigle remporte des médailles depuis dix ans.' },
-      { id: 'sommelier_chateau_aigle', nom: 'Le Sommelier du Château', rarete: 'rare', description: 'Gardien du Musée de la Vigne et du Vin, il guide les visiteurs à travers mille ans de viticulture alpine.' },
-      { id: 'patron_buffet_gare_aigle', nom: 'Le Patron du Buffet de la Gare', rarete: 'legendaire', description: 'Son buffet face aux quais accueille vignerons, skieurs et marcheurs depuis des générations sous la même enseigne.' },
-    ],
-  },
-  {
-    id: 'gare_bex',
-    nom: 'Gare de Bex',
-    description: 'Village des Alpes vaudoises abritant les seules mines de sel en activité de Suisse.',
-    coordonnees: [46.25147184194459, 7.000797180046827],
-    emoji: '⛏️',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'mineur_sel', nom: 'Le Mineur des Salines', rarete: 'commun', description: 'Il descend chaque matin dans les galeries de sel, casque à la main, dans les pas de cinq générations de mineurs.' },
-      { id: 'ingenieur_salines', nom: 'L\'Ingénieur des Salines', rarete: 'rare', description: 'Il supervise l\'extraction et le raffinage du sel des Alpes vaudoises, ressource précieuse depuis l\'époque romaine.' },
-      { id: 'patron_cafe_gare_bex', nom: 'Le Patron du Café de la Gare', rarete: 'legendaire', description: 'Son café fait face aux quais ; il accueille mineurs, touristes et voyageurs depuis des générations.' },
-    ],
-  },
-  {
-    id: 'gare_st_maurice',
-    nom: 'Gare de Saint-Maurice',
-    description: 'Cité médiévale gardant l\'entrée du Valais, entre abbaye millénaire et forteresse rupestre.',
-    coordonnees: [46.216412716081514, 7.002101559459249],
-    emoji: '⚔️',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'pelerin_abbaye', nom: 'Le Pèlerin de l\'Abbaye', rarete: 'commun', description: 'Il vient prier à l\'abbaye de St-Maurice depuis l\'autre bout de la Suisse, portant la tradition depuis mille ans.' },
-      { id: 'abbe_st_maurice', nom: 'L\'Abbé de St-Maurice', rarete: 'rare', description: 'Héritier d\'une tradition monastique de 1500 ans, il dirige l\'abbaye la plus ancienne d\'Europe encore habitée.' },
-      { id: 'patron_orient_express_st_maurice', nom: 'Le Patron de l\'Orient Express', rarete: 'legendaire', description: 'Son bar marque la frontière entre Vaud et Valais ; chaque verre y a le goût d\'un voyage qui commence.' },
-    ],
-  },
-  {
-    id: 'gare_martigny',
-    nom: 'Gare de Martigny',
-    description: 'Carrefour romain du Valais, carrefour des arts avec la Fondation Gianadda et ses vignes ancestrales.',
-    coordonnees: [46.105832119577656, 7.0788901865590725],
-    emoji: '🦁',
-    categorie: 'historique',
-    serie: 'Série 2 • RE33',
-    cartes: [
-      { id: 'archeologue_martigny', nom: 'L\'Archéologue Romain', rarete: 'commun', description: 'Il creuse patiemment l\'amphithéâtre d\'Octodurus, déterrant les traces de la présence romaine en Valais.' },
-      { id: 'musher_st_bernard', nom: 'Le Musher du Grand-St-Bernard', rarete: 'rare', description: 'Il entraîne ses chiens Saint-Bernard sur les routes du col, perpétuant la tradition des sauvetages alpins.' },
-      { id: 'patron_terminus_martigny', nom: 'La Patronne du Terminus', rarete: 'legendaire', description: 'Terminus du RE33, terminus du voyage — son bar est le point final où toutes les histoires de la ligne se concluent.' },
-    ],
-  },
-  // ──────────────────────────────────────────────────────────────────────────
-// Série 3 • Genève — Sport
-// ──────────────────────────────────────────────────────────────────────────
-  {
-    id: 'stade_geneve',
-    nom: 'Stade de Genève',
-    description: 'Antre du Servette FC à La Praille, théâtre des grandes soirées grenat.',
-    coordonnees: [46.17896908791149, 6.127884929079671],
-    emoji: '⚽',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'supporter_grenat', nom: 'Supporter Grenat', rarete: 'commun', description: 'Drapé de grenat, il fait trembler la tribune Nord à chaque but du Servette.' },
-      { id: 'capitaine_onze', nom: 'Capitaine du Onze', rarete: 'rare', description: 'Brassard au bras, il mène ses coéquipiers à la bataille sur la pelouse de La Praille.' },
-      { id: 'legende_grenat', nom: 'Légende Grenat', rarete: 'legendaire', description: 'Idole intemporelle dont le maillot floqué est suspendu au plafond du stade pour l\'éternité.' },
-    ],
-  },
-  {
-    id: 'patinoire_vernets',
-    nom: 'Patinoire des Vernets',
-    description: 'Forteresse de glace du Genève-Servette HC, repaire des Aigles.',
-    coordonnees: [46.19433749167382, 6.13355557662753],
-    emoji: '🏒',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'fan_vernets', nom: 'Fan des Vernets', rarete: 'commun', description: 'Tambour au poing, il met le feu à l\'antre des Aigles à chaque mise en jeu.' },
-      { id: 'gardien_glace', nom: 'Gardien de Glace', rarete: 'rare', description: 'Masqué et impassible, il stoppe les rondelles les plus brûlantes devant sa cage.' },
-      { id: 'aigle_geneve', nom: 'Aigle de Genève', rarete: 'legendaire', description: 'Rapace mythique dont les serres tracent des arabesques fulgurantes sur la glace.' },
-    ],
-  },
-  {
-    id: 'bains_paquis',
-    nom: 'Bains des Pâquis',
-    description: 'Jetée mythique où l\'on plonge dans le Léman, été comme hiver.',
-    coordonnees: [46.210841540795855, 6.153473097616168],
-    emoji: '🏊',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'nageur_matin', nom: 'Nageur du Matin', rarete: 'commun', description: 'Dès l\'aube, il plonge dans le Léman, ragaillardi par la morsure de l\'eau froide.' },
-      { id: 'plongeur_phare', nom: 'Plongeur du Phare', rarete: 'rare', description: 'D\'un saut parfait depuis la jetée, il fend la surface sans une éclaboussure.' },
-      { id: 'sirene_leman', nom: 'Sirène du Léman', rarete: 'legendaire', description: 'Créature des profondeurs dont le chant attire les baigneurs vers les eaux turquoise.' },
-    ],
-  },
-  {
-    id: 'sng_port_noir',
-    nom: 'Société Nautique (Port Noir)',
-    description: 'Berceau de la voile genevoise et point de départ du légendaire Bol d\'Or.',
-    coordonnees: [46.21201542221075, 6.172718204242482],
-    emoji: '⛵',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'regatier_dimanche', nom: 'Régatier du Dimanche', rarete: 'commun', description: 'Écoute en main, il borde sa voile et file bon train sur le petit lac.' },
-      { id: 'skipper_bol_or', nom: 'Skipper du Bol d\'Or', rarete: 'rare', description: 'Barre tenue ferme, il vise la bouée du Bouveret lors de la mythique régate.' },
-      { id: 'maitre_vent', nom: 'Maître du Vent', rarete: 'legendaire', description: 'Esprit de la bise, il décide à lui seul du sort des voiliers sur le Léman.' },
-    ],
-  },
-  {
-    id: 'bout_du_monde',
-    nom: 'Centre sportif du Bout-du-Monde',
-    description: 'Piste d\'athlétisme et terrains au bord de l\'Arve, à Champel.',
-    coordonnees: [46.18039194161392, 6.156341465049326],
-    emoji: '🏃',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'coureur_stade', nom: 'Coureur du Stade', rarete: 'commun', description: 'Pointes aux pieds, il avale les tours de piste sous le soleil de Champel.' },
-      { id: 'champion_100m', nom: 'Champion du 100 m', rarete: 'rare', description: 'Explosif dans les starting-blocks, il pulvérise le chrono en ligne droite.' },
-      { id: 'dieu_course', nom: 'Dieu de la Course', rarete: 'legendaire', description: 'Demi-dieu ailé dont les foulées effleurent à peine la piste rouge.' },
-    ],
-  },
-  {
-    id: 'skatepark_plainpalais',
-    nom: 'Skatepark de Plainpalais',
-    description: 'Bowls et modules de béton au cœur de la Plaine, repaire des riders.',
-    coordonnees: [46.199452050552644, 6.140816116652306],
-    emoji: '🛹',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'rider_plaine', nom: 'Rider de la Plaine', rarete: 'commun', description: 'Planche sous les pieds, il enchaîne les bowls de Plainpalais au coucher du soleil.' },
-      { id: 'pro_bowl', nom: 'Pro du Bowl', rarete: 'rare', description: 'Ses grinds et ses airs défient la gravité au-dessus du béton.' },
-      { id: 'roi_skate', nom: 'Roi du Skate', rarete: 'legendaire', description: 'Légende urbaine dont la figure parfaite reste gravée dans les murs tagués du park.' },
-    ],
-  },
-  {
-    id: 'bois_batie',
-    nom: 'Bois de la Bâtie',
-    description: 'Parcours Vita et sentiers boisés surplombant l\'Arve et le Rhône.',
-    coordonnees: [46.19829571193378, 6.124116393811836],
-    emoji: '🌲',
-    categorie: 'sport',
-    serie: 'Série 3 • Genève',
-    cartes: [
-      { id: 'joggeur_batie', nom: 'Joggeur de la Bâtie', rarete: 'commun', description: 'Au petit matin, il trace sa boucle entre les arbres et les enclos du parc.' },
-      { id: 'traileur_bois', nom: 'Traileur des Bois', rarete: 'rare', description: 'Infatigable, il grimpe et dévale les sentiers escarpés de la Bâtie.' },
-      { id: 'esprit_foret', nom: 'Esprit de la Forêt', rarete: 'legendaire', description: 'Gardien sylvestre dont la course silencieuse réveille les sentiers à l\'aube.' },
-    ],
-  },
-];
-
-const TOUTES_LES_CARTES = LIEUX.flatMap((lieu) =>
-  lieu.cartes.map((carte) => ({ ...carte, lieuId: lieu.id, lieuNom: lieu.nom }))
-);
-
-const NOMBRE_TOTAL_CARTES = TOUTES_LES_CARTES.length;
+// Recalcule toutes les structures dérivées de LIEUX. Appelée une fois après le chargement des collections.
+function recomputeDerivedFromLieux() {
+  TOUTES_LES_CARTES = LIEUX.flatMap((lieu) =>
+    lieu.cartes.map((carte) => ({ ...carte, lieuId: lieu.id, lieuNom: lieu.nom }))
+  );
+  NOMBRE_TOTAL_CARTES = TOUTES_LES_CARTES.length;
+  SERIES_MAP = [...new Set(LIEUX.map(l => l.serie).filter(Boolean))];
+  SERIES_COL = ['toutes', ...new Set(LIEUX.map(l => l.serie).filter(Boolean))];
+}
 
 function getNumeroCarteGlobal(carteId) {
   const idx = TOUTES_LES_CARTES.findIndex((c) => c.id === carteId);
@@ -2627,7 +2013,7 @@ function BottomNav() {
 
 // ===================== MAP PAGE =====================
 const RAYON_DEBLOCAGE = 50;
-const SERIES_MAP = [...new Set(LIEUX.map(l => l.serie).filter(Boolean))];
+// SERIES_MAP : déclaré et calculé plus haut via recomputeDerivedFromLieux().
 
 function CartePage() {
   const { lieuxVisites, peutOuvrir, visiterLieu, tempsAvantProchainPaquet, godMode } = useContext(CollectionContext);
@@ -2824,7 +2210,7 @@ function OuverturePage() {
 
 // ===================== COLLECTION PAGE =====================
 const ORDRE_RARETE_COL = ['commun', 'rare', 'legendaire'];
-const SERIES_COL = ['toutes', ...new Set(LIEUX.map(l => l.serie).filter(Boolean))];
+// SERIES_COL : déclaré et calculé plus haut via recomputeDerivedFromLieux().
 function getCarteSuperieure(carte, lieu) { const idx = ORDRE_RARETE_COL.indexOf(carte.rarete); if (idx === -1 || idx >= ORDRE_RARETE_COL.length - 1) return null; return lieu.cartes.find(c => c.rarete === ORDRE_RARETE_COL[idx + 1]) ?? null; }
 function formaterTimer(ms) { if (ms <= 0) return '00:00:00'; const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000), s = Math.floor((ms % 60000) / 1000); return [h, m, s].map(v => String(v).padStart(2, '0')).join(':'); }
 
@@ -3112,8 +2498,70 @@ function App() {
   ));
 }
 
+// ===================== BOOTSTRAP — chargement des collections =====================
+(function injecterStylesBoot() {
+  const s = document.createElement('style');
+  s.textContent = "@keyframes culturego-spin{to{transform:rotate(360deg)}}"
+    + ".boot-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:18px;text-align:center;padding:24px;color:#e8eaed;font-family:inherit}"
+    + ".boot-spinner{width:42px;height:42px;border-radius:50%;border:4px solid rgba(255,255,255,.15);border-top-color:#4f8ef7;animation:culturego-spin .8s linear infinite}"
+    + ".boot-msg{font-size:15px;opacity:.85;max-width:340px;line-height:1.45}"
+    + ".boot-erreur-icone{font-size:40px}"
+    + ".boot-retry{margin-top:6px;padding:10px 22px;border:none;border-radius:10px;background:#4f8ef7;color:#fff;font-size:15px;font-weight:600;cursor:pointer}"
+    + ".boot-retry:active{transform:scale(.97)}";
+  document.head.appendChild(s);
+})();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(e(App));
+
+function EcranChargement(message) {
+  return e('div', { className: 'boot-screen' },
+    e('div', { className: 'boot-spinner' }),
+    e('div', { className: 'boot-msg' }, message)
+  );
+}
+function EcranErreur(message, onRetry) {
+  return e('div', { className: 'boot-screen' },
+    e('div', { className: 'boot-erreur-icone' }, '⚠️'),
+    e('div', { className: 'boot-msg' }, message),
+    e('button', { className: 'boot-retry', onClick: onRetry }, 'Réessayer')
+  );
+}
+
+async function chargerCollections() {
+  const base = 'collections/';
+  const reponseManifeste = await fetch(base + 'manifest.json', { cache: 'no-cache' });
+  if (!reponseManifeste.ok) throw new Error('manifest.json introuvable (' + reponseManifeste.status + ')');
+  const manifeste = await reponseManifeste.json();
+  if (!Array.isArray(manifeste) || manifeste.length === 0) throw new Error('manifest.json vide ou invalide');
+
+  const series = await Promise.all(manifeste.map(async (fichier) => {
+    const r = await fetch(base + fichier, { cache: 'no-cache' });
+    if (!r.ok) throw new Error(fichier + ' introuvable (' + r.status + ')');
+    const data = await r.json();
+    if (!Array.isArray(data)) throw new Error(fichier + ' : format attendu = tableau de lieux');
+    return data;
+  }));
+  return series.flat();
+}
+
+async function demarrer() {
+  root.render(EcranChargement('Chargement des collections\u2026'));
+  try {
+    LIEUX = await chargerCollections();
+    if (LIEUX.length === 0) throw new Error('aucun lieu charge');
+    recomputeDerivedFromLieux();
+    root.render(e(App));
+  } catch (err) {
+    console.error('Echec du chargement des collections :', err);
+    root.render(EcranErreur(
+      'Impossible de charger les collections. ' + (err && err.message ? err.message : '') +
+      ' \u2014 verifie que le dossier collections/ est bien deploye.',
+      demarrer
+    ));
+  }
+}
+
+demarrer();
 </script>
 </body>
 </html>

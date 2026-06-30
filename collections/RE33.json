@@ -1,0 +1,706 @@
+[
+  {
+    "id": "gare_annemasse",
+    "nom": "Gare d'Annemasse",
+    "description": "Porte d'entrée franco-suisse, point de départ du RE33 côté France.",
+    "coordonnees": [
+      46.19930117621338,
+      6.236515416912813
+    ],
+    "emoji": "🇫🇷",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "frontalier_annemasse",
+        "nom": "Le Frontalier",
+        "rarete": "commun",
+        "description": "Chaque matin il franchit la frontière, badge CFF en main, café en route."
+      },
+      {
+        "id": "accordeoniste_annemasse",
+        "nom": "L'Accordéoniste",
+        "rarete": "rare",
+        "description": "Sa musette résonne sur le quai, brouillant la frontière entre deux cultures."
+      },
+      {
+        "id": "patron_huitieme_annemasse",
+        "nom": "La Patronne du Huitième",
+        "rarete": "legendaire",
+        "description": "Son bar face à la gare voit défiler depuis des décennies voyageurs, frontaliers et noctambules des deux pays."
+      }
+    ]
+  },
+  {
+    "id": "gare_chene_bourg",
+    "nom": "Gare de Chêne-Bourg",
+    "description": "Quartier genevois au carrefour des tramways et du rail, entre ville et campagne.",
+    "coordonnees": [
+      46.19660349666,
+      6.197319539842232
+    ],
+    "emoji": "🌳",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "pendulaire_chene",
+        "nom": "Le Pendulaire Genevois",
+        "rarete": "commun",
+        "description": "Il enchaîne tram et RE33 avec une précision horlogère, les yeux rivés sur son téléphone."
+      },
+      {
+        "id": "photographe_chene",
+        "nom": "Le Photographe Urbain",
+        "rarete": "rare",
+        "description": "Il capture la vie ordinaire du quartier avec un œil qui transforme le banal en poésie."
+      },
+      {
+        "id": "patron_coin_espoir_chene",
+        "nom": "Le Patron du Coin de l'Espoir",
+        "rarete": "legendaire",
+        "description": "Elle tient son café depuis vingt ans, arbitre incontestée des débats de comptoir entre deux trains."
+      }
+    ]
+  },
+  {
+    "id": "gare_eaux_vives",
+    "nom": "Gare de Genève-Eaux-Vives",
+    "description": "Quartier vivant de Genève, entre le lac et les boutiques, au cœur du CEVA.",
+    "coordonnees": [
+      46.200998333487476,
+      6.165810478981852
+    ],
+    "emoji": "💧",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "joggeur_eaux_vives",
+        "nom": "Le Joggeur du Lac",
+        "rarete": "commun",
+        "description": "Il longe les quais chaque matin avant de sauter dans le RE33, aussi ponctuel que le jet d'eau."
+      },
+      {
+        "id": "photo_jet_eau",
+        "nom": "La Photographe du Jet d'Eau",
+        "rarete": "rare",
+        "description": "Elle guette la lumière parfaite sur le jet d'eau depuis les quais, reflex à la main."
+      },
+      {
+        "id": "patron_gigi_cucina",
+        "nom": "Le Patron de Gigi Cucina",
+        "rarete": "legendaire",
+        "description": "Son restaurant-bar donne sur le quartier ; il connaît par leur prénom chaque habitant depuis l'ouverture du CEVA."
+      }
+    ]
+  },
+  {
+    "id": "gare_champel",
+    "nom": "Gare de Genève-Champel",
+    "description": "Quartier résidentiel genevois à deux pas des HUG, au calme au-dessus de la ville.",
+    "coordonnees": [
+      46.192278879311395,
+      6.153567640417037
+    ],
+    "emoji": "🏥",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "etudiant_medecine",
+        "nom": "L'Étudiant en Médecine",
+        "rarete": "commun",
+        "description": "Polycopié sous le bras, il somnole dans le RE33 entre deux gardes aux HUG."
+      },
+      {
+        "id": "chercheur_oms",
+        "nom": "Le Chercheur de l'OMS",
+        "rarete": "rare",
+        "description": "Il travaille sur des pandémies mondiales depuis un bureau discret des Organisations Internationales."
+      },
+      {
+        "id": "patron_pompette_champel",
+        "nom": "La Patronne de Pompette",
+        "rarete": "legendaire",
+        "description": "Son bar est le rendez-vous où médecins, professeurs et patients se retrouvent à égalité devant un verre."
+      }
+    ]
+  },
+  {
+    "id": "gare_lancy_bachet",
+    "nom": "Gare de Lancy-Bachet",
+    "description": "Quartier industriel et sportif de Genève, au pied du stade du Servette FC.",
+    "coordonnees": [
+      46.174242989714585,
+      6.12972544699037
+    ],
+    "emoji": "⚽",
+    "categorie": "sport",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "supporter_servette",
+        "nom": "Le Supporter du Servette",
+        "rarete": "commun",
+        "description": "Écharpe grenat autour du cou, il prend le RE33 même pour les matchs à domicile, par habitude."
+      },
+      {
+        "id": "skateuse_bachet",
+        "nom": "La Skateuse du Stade",
+        "rarete": "rare",
+        "description": "Elle ride les dalles du stade vide les soirs de semaine, ses tricks éclairés par les projecteurs en veille."
+      },
+      {
+        "id": "patron_village_soir",
+        "nom": "Le Patron du Village du Soir",
+        "rarete": "legendaire",
+        "description": "Son comptoir devient la prolongation du terrain le soir de match, épicentre de toutes les émotions grenats."
+      }
+    ]
+  },
+  {
+    "id": "gare_lancy_pont_rouge",
+    "nom": "Gare de Lancy-Pont-Rouge",
+    "description": "Nouveau quartier genevois en plein essor, symbole de la métamorphose urbaine de la rive gauche.",
+    "coordonnees": [
+      46.1869358186522,
+      6.125172528901489
+    ],
+    "emoji": "🌉",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "architecte_stagiaire",
+        "nom": "L'Architecte Stagiaire",
+        "rarete": "commun",
+        "description": "Il dessine le quartier de demain sur son laptop dans le train, rêvant de laisser sa marque."
+      },
+      {
+        "id": "urbaniste_pontrouge",
+        "nom": "L'Urbaniste Visionnaire",
+        "rarete": "rare",
+        "description": "C'est lui qui a imaginé les espaces verts entre les tours, transformant un désert bétonné en quartier vivable."
+      },
+      {
+        "id": "patron_kulture_bar",
+        "nom": "La Patronne du Kulture Bar",
+        "rarete": "legendaire",
+        "description": "Premier à ouvrir dans le quartier neuf, il a vu pousser les immeubles depuis sa terrasse et accueilli leurs premiers habitants."
+      }
+    ]
+  },
+  {
+    "id": "gare_geneve",
+    "nom": "Gare de Genève",
+    "description": "Gare Cornavin, carrefour international au cœur de la capitale diplomatique mondiale.",
+    "coordonnees": [
+      46.21056452712161,
+      6.143022845293368
+    ],
+    "emoji": "🌍",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "voyageur_perdu_geneve",
+        "nom": "Le Voyageur Perdu",
+        "rarete": "commun",
+        "description": "Il cherche son quai depuis dix minutes, plan en main, dans l'une des gares les plus internationales d'Europe."
+      },
+      {
+        "id": "agent_change",
+        "nom": "L'Agent de Change",
+        "rarete": "rare",
+        "description": "Il jongle avec les devises du monde entier depuis son bureau vitré face aux guichets."
+      },
+      {
+        "id": "patron_petite_reine_geneve",
+        "nom": "Le Patron de La Petite Reine",
+        "rarete": "legendaire",
+        "description": "Depuis son comptoir face aux quais, il a vu passer des présidents, des réfugiés et tous ceux d'entre-deux."
+      }
+    ]
+  },
+  {
+    "id": "gare_coppet",
+    "nom": "Gare de Coppet",
+    "description": "Bourg historique dominé par son château, berceau du libéralisme européen au temps de Madame de Staël.",
+    "coordonnees": [
+      46.3173916460273,
+      6.187884804094795
+    ],
+    "emoji": "🏰",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "pecheur_coppet",
+        "nom": "Le Pêcheur de Coppet",
+        "rarete": "commun",
+        "description": "Il tend ses lignes au bord du Léman depuis l'enfance, indifférent aux trains qui passent derrière lui."
+      },
+      {
+        "id": "historien_coppet",
+        "nom": "L'Historien du Château",
+        "rarete": "rare",
+        "description": "Il peut réciter de mémoire chaque visite illustre qu'a reçue le château au fil des siècles."
+      },
+      {
+        "id": "patron_cube_coppet",
+        "nom": "La Patronne du The Cube",
+        "rarete": "legendaire",
+        "description": "Son bar accueille voyageurs et locaux depuis des générations, dans l'ombre bienveillante du château."
+      }
+    ]
+  },
+  {
+    "id": "gare_nyon_re33",
+    "nom": "Gare de Nyon",
+    "description": "Le nœud ferroviaire de Nyon, où le RE33 marque sa pause lacustre avant de poursuivre vers Lausanne.",
+    "coordonnees": [
+      46.38440949802272,
+      6.236026833505711
+    ],
+    "emoji": "🚉",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "employe_fifa",
+        "nom": "L'Employé de la FIFA",
+        "rarete": "commun",
+        "description": "Il descend à Nyon chaque matin depuis Genève, badge UEFA en poche, café à la main."
+      },
+      {
+        "id": "scout_foot",
+        "nom": "Le Scout de Foot",
+        "rarete": "rare",
+        "description": "Il parcourt l'Europe pour dénicher les futurs champions, mais rentre toujours dormir à Nyon."
+      },
+      {
+        "id": "patron_pub_gare_nyon",
+        "nom": "Le Patron du Pub de la Gare",
+        "rarete": "legendaire",
+        "description": "Son bar est le premier et dernier verre de tous ceux qui transitent par Nyon, UEFA ou pas."
+      }
+    ]
+  },
+  {
+    "id": "gare_gland",
+    "nom": "Gare de Gland",
+    "description": "Petit bourg vaudois entre vignobles et Léman, en pleine mutation avec l'arrivée de nouvelles familles.",
+    "coordonnees": [
+      46.42002275870674,
+      6.269095276468904
+    ],
+    "emoji": "🌰",
+    "categorie": "nature",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "habitant_gland",
+        "nom": "L'Habitant du Village",
+        "rarete": "commun",
+        "description": "Il est né ici, y a grandi, et trouve que Gland change trop vite depuis que le RE33 s'y arrête."
+      },
+      {
+        "id": "architecte_lac_gland",
+        "nom": "L'Architecte du Lac",
+        "rarete": "rare",
+        "description": "Il conçoit les nouvelles villas lacustres en cherchant l'équilibre entre vue sur l'eau et respect du paysage."
+      },
+      {
+        "id": "patron_dive_bar_gland",
+        "nom": "La Patronne du Dive Bär",
+        "rarete": "legendaire",
+        "description": "Son café reste le seul endroit où tout Gland finit par se croiser, entre deux trains et deux verres."
+      }
+    ]
+  },
+  {
+    "id": "gare_rolle",
+    "nom": "Gare de Rolle",
+    "description": "Cité médiévale lacustre dominée par son château, réputée pour ses vins et son port.",
+    "coordonnees": [
+      46.46282752847035,
+      6.336439901354842
+    ],
+    "emoji": "⚓",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "promeneur_port_rolle",
+        "nom": "Le Promeneur du Port",
+        "rarete": "commun",
+        "description": "Il fait le tour du port chaque soir, observant les voiliers se balancer dans la lumière du couchant."
+      },
+      {
+        "id": "conservateur_chateau_rolle",
+        "nom": "Le Conservateur du Château",
+        "rarete": "rare",
+        "description": "Il garde les archives du château de Rolle et peut raconter six siècles d'histoire sans notes."
+      },
+      {
+        "id": "patron_chemin_de_fer_rolle",
+        "nom": "Le Patron du Chemin-de-Fer",
+        "rarete": "legendaire",
+        "description": "Son restaurant face aux quais accueille voyageurs et vignerons depuis plus d'un siècle, les pieds dans l'eau."
+      }
+    ]
+  },
+  {
+    "id": "gare_allaman",
+    "nom": "Gare d'Allaman",
+    "description": "Village vaudois niché entre vignes et château, producteur de vins blancs d'exception.",
+    "coordonnees": [
+      46.475769348181984,
+      6.399683203598423
+    ],
+    "emoji": "🍷",
+    "categorie": "gastronomie",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "vendangeur_allaman",
+        "nom": "Le Vendangeur d'Allaman",
+        "rarete": "commun",
+        "description": "Il cueille les grappes en terrasse depuis l'enfance, les mains tachées de jus de chasselas."
+      },
+      {
+        "id": "caviste_allaman",
+        "nom": "Le Caviste Passionné",
+        "rarete": "rare",
+        "description": "Sa sélection dépasse largement la région ; il importe les grands crus qu'il boit lui-même en priorité."
+      },
+      {
+        "id": "patron_pizzeria_gare_allaman",
+        "nom": "La Patronne de la Pizzeria",
+        "rarete": "legendaire",
+        "description": "Sa pizzeria jouxte la gare ; entre deux trains et une bonne bouteille de chasselas local, personne ne repart le ventre vide."
+      }
+    ]
+  },
+  {
+    "id": "gare_morges",
+    "nom": "Gare de Morges",
+    "description": "Ville lacustre vaudoise célèbre pour son festival de la tulipe et son château du XIIIe siècle.",
+    "coordonnees": [
+      46.51104095421675,
+      6.494029792030009
+    ],
+    "emoji": "🌸",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "fan_tulipes",
+        "nom": "La Photographe des Tulipes",
+        "rarete": "commun",
+        "description": "Elle revient chaque printemps avec son appareil, immortalisant les cent mille tulipes du parc de l'Indépendance."
+      },
+      {
+        "id": "photographe_festival",
+        "nom": "Le Photographe du Festival",
+        "rarete": "rare",
+        "description": "Son portfolio du Festival de la Tulipe a fait le tour des magazines horticoles européens."
+      },
+      {
+        "id": "patron_black_horse_morges",
+        "nom": "La Patronne du Black Horse",
+        "rarete": "legendaire",
+        "description": "Son pub face à la gare est le rendez-vous de tous les Morgiens après le travail, saison des tulipes ou pas."
+      }
+    ]
+  },
+  {
+    "id": "gare_renens",
+    "nom": "Gare de Renens",
+    "description": "Ville vaudoise dynamique à deux pas de l'EPFL, carrefour estudiantin et multiculturel.",
+    "coordonnees": [
+      46.537030771217154,
+      6.578896552610359
+    ],
+    "emoji": "🎓",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "etudiant_epfl",
+        "nom": "L'Étudiant de l'EPFL",
+        "rarete": "commun",
+        "description": "Il jongle entre le RE33 et le tram vers l'EPFL, son vélo pliant sous le bras et son Mac sur l'épaule."
+      },
+      {
+        "id": "ingenieur_epfl",
+        "nom": "L'Ingénieur de l'EPFL",
+        "rarete": "rare",
+        "description": "Son prototype de drone autonome a été testé pour la première fois dans les coursives de l'EPFL à deux pas d'ici."
+      },
+      {
+        "id": "patron_big_ben_renens",
+        "nom": "La Patronne du Big Ben",
+        "rarete": "legendaire",
+        "description": "Son pub face à la gare est le premier bureau de milliers d'étudiants, ouvert avant le premier cours et après le dernier."
+      }
+    ]
+  },
+  {
+    "id": "gare_lausanne",
+    "nom": "Gare de Lausanne",
+    "description": "Capitale olympique mondiale, ville de culture et d'institutions sur les hauteurs du Léman.",
+    "coordonnees": [
+      46.51706488267252,
+      6.629187425413109
+    ],
+    "emoji": "🏅",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "touriste_cio",
+        "nom": "Le Touriste du Musée Olympique",
+        "rarete": "commun",
+        "description": "Il débarque à Lausanne uniquement pour le Musée Olympique et repart avec un drapeau des JO en souvenir."
+      },
+      {
+        "id": "athlete_olympique",
+        "nom": "L'Athlète Olympique",
+        "rarete": "rare",
+        "description": "Il s'entraîne au bord du lac chaque matin avant de remonter au CIO pour ses réunions de préparation."
+      },
+      {
+        "id": "patron_gosses_quebec_lausanne",
+        "nom": "Le Patron des Gosses du Québec",
+        "rarete": "legendaire",
+        "description": "Son bar est une institution lausannoise ; athlètes, artistes et travailleurs s'y croisent depuis l'ouverture."
+      }
+    ]
+  },
+  {
+    "id": "gare_vevey",
+    "nom": "Gare de Vevey",
+    "description": "Cité des images entre Nestlé et Chaplin, au bord du lac et au pied des vignobles classés à l'UNESCO.",
+    "coordonnees": [
+      46.46306036795287,
+      6.84324824903028
+    ],
+    "emoji": "🎬",
+    "categorie": "gastronomie",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "fan_chaplin",
+        "nom": "Le Fan de Chaplin",
+        "rarete": "commun",
+        "description": "Il fait le pèlerinage au Chaplin's World chaque année et connaît chaque film par cœur."
+      },
+      {
+        "id": "photographe_vignerons",
+        "nom": "La Photographe de la Fête",
+        "rarete": "rare",
+        "description": "Elle documente depuis vingt ans la fête la plus rare du monde, qui n'a lieu que trois fois par siècle."
+      },
+      {
+        "id": "patron_taphouse_vevey",
+        "nom": "La Patronne du Taphouse",
+        "rarete": "legendaire",
+        "description": "Son bar est le rendez-vous de tous les créatifs de la région, dans l'esprit des cafés littéraires d'autrefois."
+      }
+    ]
+  },
+  {
+    "id": "gare_montreux",
+    "nom": "Gare de Montreux",
+    "description": "Perle de la Riviera vaudoise, berceau du jazz festival le plus célèbre d'Europe.",
+    "coordonnees": [
+      46.435883707285505,
+      6.910414587671802
+    ],
+    "emoji": "🎵",
+    "categorie": "culture",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "festivalier_jazz",
+        "nom": "Le Festivalier du Jazz",
+        "rarete": "commun",
+        "description": "Il plante sa chaise devant la scène du lac chaque juillet depuis trente ans, accréditation en bandoulière."
+      },
+      {
+        "id": "musicien_festival",
+        "nom": "Le Musicien du Festival",
+        "rarete": "rare",
+        "description": "Il a joué sur la petite scène du Miles Davis Hall avant d'être propulsé sur les grandes scènes mondiales."
+      },
+      {
+        "id": "patron_45_bar_montreux",
+        "nom": "La Patronne du 45 Bar",
+        "rarete": "legendaire",
+        "description": "Son bar face au lac tourne à fond depuis des années, épicentre de la nuit montreusienne entre deux festivals."
+      }
+    ]
+  },
+  {
+    "id": "gare_villeneuve",
+    "nom": "Gare de Villeneuve",
+    "description": "Bout du lac Léman, porte des Alpes, là où les eaux douces laissent place aux rochers.",
+    "coordonnees": [
+      46.398363244309735,
+      6.926956893542117
+    ],
+    "emoji": "🏔️",
+    "categorie": "nature",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "dernier_voyageur",
+        "nom": "Le Dernier Voyageur",
+        "rarete": "commun",
+        "description": "Il descend toujours à Villeneuve par erreur, mais finit par trouver que c'est la plus belle erreur qu'il ait faite."
+      },
+      {
+        "id": "explorateur_alpes",
+        "nom": "L'Explorateur des Alpes",
+        "rarete": "rare",
+        "description": "Il part en montagne depuis Villeneuve avec son sac de 20 kg et revient trois semaines plus tard, barbu et serein."
+      },
+      {
+        "id": "patron_queensunset_villeneuve",
+        "nom": "La Patronne du Queen'Sunset",
+        "rarete": "legendaire",
+        "description": "Son bar au bout du lac capte les derniers rayons sur les Alpes ; personne ne repart sans avoir vu le soleil se coucher."
+      }
+    ]
+  },
+  {
+    "id": "gare_aigle",
+    "nom": "Gare d'Aigle",
+    "description": "Capitale du Chablais vaudois, carrefour des vins blancs et des remontées mécaniques des Alpes.",
+    "coordonnees": [
+      46.316849106247986,
+      6.963762627872611
+    ],
+    "emoji": "🦅",
+    "categorie": "gastronomie",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "vigneron_aigle",
+        "nom": "Le Vigneron d'Aigle",
+        "rarete": "commun",
+        "description": "Ses pieds connaissent chaque pierre des terrasses ; son chasselas d'Aigle remporte des médailles depuis dix ans."
+      },
+      {
+        "id": "sommelier_chateau_aigle",
+        "nom": "Le Sommelier du Château",
+        "rarete": "rare",
+        "description": "Gardien du Musée de la Vigne et du Vin, il guide les visiteurs à travers mille ans de viticulture alpine."
+      },
+      {
+        "id": "patron_buffet_gare_aigle",
+        "nom": "Le Patron du Buffet de la Gare",
+        "rarete": "legendaire",
+        "description": "Son buffet face aux quais accueille vignerons, skieurs et marcheurs depuis des générations sous la même enseigne."
+      }
+    ]
+  },
+  {
+    "id": "gare_bex",
+    "nom": "Gare de Bex",
+    "description": "Village des Alpes vaudoises abritant les seules mines de sel en activité de Suisse.",
+    "coordonnees": [
+      46.25147184194459,
+      7.000797180046827
+    ],
+    "emoji": "⛏️",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "mineur_sel",
+        "nom": "Le Mineur des Salines",
+        "rarete": "commun",
+        "description": "Il descend chaque matin dans les galeries de sel, casque à la main, dans les pas de cinq générations de mineurs."
+      },
+      {
+        "id": "ingenieur_salines",
+        "nom": "L'Ingénieur des Salines",
+        "rarete": "rare",
+        "description": "Il supervise l'extraction et le raffinage du sel des Alpes vaudoises, ressource précieuse depuis l'époque romaine."
+      },
+      {
+        "id": "patron_cafe_gare_bex",
+        "nom": "Le Patron du Café de la Gare",
+        "rarete": "legendaire",
+        "description": "Son café fait face aux quais ; il accueille mineurs, touristes et voyageurs depuis des générations."
+      }
+    ]
+  },
+  {
+    "id": "gare_st_maurice",
+    "nom": "Gare de Saint-Maurice",
+    "description": "Cité médiévale gardant l'entrée du Valais, entre abbaye millénaire et forteresse rupestre.",
+    "coordonnees": [
+      46.216412716081514,
+      7.002101559459249
+    ],
+    "emoji": "⚔️",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "pelerin_abbaye",
+        "nom": "Le Pèlerin de l'Abbaye",
+        "rarete": "commun",
+        "description": "Il vient prier à l'abbaye de St-Maurice depuis l'autre bout de la Suisse, portant la tradition depuis mille ans."
+      },
+      {
+        "id": "abbe_st_maurice",
+        "nom": "L'Abbé de St-Maurice",
+        "rarete": "rare",
+        "description": "Héritier d'une tradition monastique de 1500 ans, il dirige l'abbaye la plus ancienne d'Europe encore habitée."
+      },
+      {
+        "id": "patron_orient_express_st_maurice",
+        "nom": "Le Patron de l'Orient Express",
+        "rarete": "legendaire",
+        "description": "Son bar marque la frontière entre Vaud et Valais ; chaque verre y a le goût d'un voyage qui commence."
+      }
+    ]
+  },
+  {
+    "id": "gare_martigny",
+    "nom": "Gare de Martigny",
+    "description": "Carrefour romain du Valais, carrefour des arts avec la Fondation Gianadda et ses vignes ancestrales.",
+    "coordonnees": [
+      46.105832119577656,
+      7.0788901865590725
+    ],
+    "emoji": "🦁",
+    "categorie": "historique",
+    "serie": "Série 2 • RE33",
+    "cartes": [
+      {
+        "id": "archeologue_martigny",
+        "nom": "L'Archéologue Romain",
+        "rarete": "commun",
+        "description": "Il creuse patiemment l'amphithéâtre d'Octodurus, déterrant les traces de la présence romaine en Valais."
+      },
+      {
+        "id": "musher_st_bernard",
+        "nom": "Le Musher du Grand-St-Bernard",
+        "rarete": "rare",
+        "description": "Il entraîne ses chiens Saint-Bernard sur les routes du col, perpétuant la tradition des sauvetages alpins."
+      },
+      {
+        "id": "patron_terminus_martigny",
+        "nom": "La Patronne du Terminus",
+        "rarete": "legendaire",
+        "description": "Terminus du RE33, terminus du voyage — son bar est le point final où toutes les histoires de la ligne se concluent."
+      }
+    ]
+  }
+]
