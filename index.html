@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CultureGO – Nyon</title>
+<title>CultureGO</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -1993,7 +1993,7 @@ function CarteJeu({ carte, lieu, possedee=true, retournee=true, grande=false, qu
 function Navigation({ godMode, setGodMode }) {
   const { page, setPage } = useContext(NavContext);
   return e('nav', { className: 'navigation' },
-    e('div', { className: 'nav-logo' }, e('span', { className: 'nav-logo-icon' }, '🗺️'), e('span', { className: 'nav-logo-texte' }, 'CultureGO ', e('span', { className: 'nav-logo-ville' }, 'Nyon'))),
+    e('div', { className: 'nav-logo' }, e('span', { className: 'nav-logo-icon' }, '🗺️'), e('span', { className: 'nav-logo-texte' }, 'Culture ', e('span', { className: 'nav-logo-ville' }, 'GO'))),
     e('div', { className: 'nav-liens' },
       e('button', { className: 'nav-lien' + (page === 'carte' ? ' actif' : ''), onClick: () => setPage('carte') }, '🗺️ Carte'),
       e('button', { className: 'nav-lien' + (page === 'collection' ? ' actif' : ''), onClick: () => setPage('collection') }, '🃏 Collection'),
