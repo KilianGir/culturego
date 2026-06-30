@@ -228,8 +228,7 @@
     "nom": "Centre sportif de la Queue d'Arve",
     "description": "Vaste complexe multisport des Acacias, dominé par son grand mur de grimpe.",
     "coordonnees": [
-      46.19075,
-      6.13185
+      46.19624617445093, 6.13112292360969
     ],
     "emoji": "🧗",
     "categorie": "sport",
@@ -260,8 +259,7 @@
     "nom": "Échiquiers du Parc des Bastions",
     "description": "Sous les marronniers, on s'affronte sur les échiquiers géants du parc.",
     "coordonnees": [
-      46.20055,
-      6.1452
+      46.20080668401394, 6.144145804949926
     ],
     "emoji": "♟️",
     "categorie": "sport",
@@ -292,8 +290,7 @@
     "nom": "Golf Club de Genève (Cologny)",
     "description": "Parcours vallonné de Cologny offrant des vues plongeantes sur la rade.",
     "coordonnees": [
-      46.2238,
-      6.1812
+      46.22208486963631, 6.191997809572688
     ],
     "emoji": "⛳",
     "categorie": "sport",
@@ -324,8 +321,7 @@
     "nom": "Téléphérique du Salève",
     "description": "Balcon rocheux de Genève, paradis des parapentistes et des randonneurs.",
     "coordonnees": [
-      46.1397,
-      6.1861
+      46.15465688256571, 6.194394629314489
     ],
     "emoji": "🪂",
     "categorie": "sport",
@@ -356,8 +352,7 @@
     "nom": "Tennis Club des Eaux-Vives",
     "description": "Courts ombragés du parc des Eaux-Vives, face au lac et à la rade.",
     "coordonnees": [
-      46.2048,
-      6.1688
+      46.20756481044996, 6.169580175498886
     ],
     "emoji": "🎾",
     "categorie": "sport",
@@ -388,8 +383,7 @@
     "nom": "Genève-Plage",
     "description": "Bassins et plongeoirs au bord du lac, à Port-Noir.",
     "coordonnees": [
-      46.2052,
-      6.1705
+      46.21341202241545, 6.173948702126811
     ],
     "emoji": "🤿",
     "categorie": "sport",
@@ -420,8 +414,7 @@
     "nom": "Centre sportif des Évaux",
     "description": "Grand domaine sportif d'Onex, terrains de rugby cernés de forêt.",
     "coordonnees": [
-      46.1818,
-      6.1015
+      46.189815518199175, 6.091932860630522
     ],
     "emoji": "🏉",
     "categorie": "sport",
